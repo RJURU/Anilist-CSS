@@ -44,7 +44,7 @@ body {
   content: url(../Icons/Home.svg);
 }
 #nav .wrap .links > a:nth-child(2)::after {
-  content: url(../Icons/Social.svg);
+  content: url(../Icons/User.svg);
 }
 #nav .wrap .links > a:nth-child(3)::after {
   content: url(../Icons/Video.svg);
