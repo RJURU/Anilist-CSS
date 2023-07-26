@@ -29,6 +29,10 @@ body {
   height: 75%;
   color: #e2eafe;
 }
+#nav .wrap .links > a:nth-child(1)::after {
+  content: url(../Icons/Home.svg);
+  color: #e2eafe;
+}
 #nav .wrap .search {
   display: flex;
   flex-direction: column;

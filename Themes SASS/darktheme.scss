@@ -32,8 +32,12 @@ body {
 			justify-content: space-evenly;
 			height: 75%;
 			color: $text;
-			a {
+			> a {
 				&:nth-child(1) {
+					&::after {
+						content: url(../Icons/Home.svg);
+						color: $text;
+					}
 				}
 			}
 		}
