@@ -206,6 +206,14 @@ body {
 .page-content > .user .header-wrap .banner .container .banner-content .actions .dropdown {
   display: none;
 }
+.page-content > .user .content {
+  padding: 0;
+}
+.page-content > .user .content .overview .section .about .content-wrap {
+  background: #302d31;
+  border-radius: 20px;
+  color: #ffffff;
+}
 
 .footer[data-v-0f519cab] {
   margin-left: 150px;

@@ -243,6 +243,20 @@ body {
 				}
 			}
 		}
+		.content {
+			padding: 0;
+			.overview {
+				.section {
+					.about {
+						.content-wrap {
+							background: $secondary;
+							border-radius: 20px;
+							color: $text;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
