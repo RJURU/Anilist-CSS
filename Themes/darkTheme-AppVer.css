@@ -176,7 +176,7 @@ body {
   gap: 50px;
 }
 .page-content > .user .header-wrap {
-  border-radius: 0px;
+  border-radius: 5px;
   overflow: hidden;
 }
 .page-content > .user .header-wrap .banner .container {
@@ -211,7 +211,6 @@ body {
 }
 .page-content > .user .content .overview .section .about .content-wrap {
   background: #302d31;
-  border-radius: 0px;
   color: #ffffff;
 }
 .page-content > .user .content .overview .section .desktop .section-header {
@@ -222,7 +221,6 @@ body {
 }
 .page-content > .user .content .overview .section .desktop .activity-history {
   background: #302d31;
-  border-radius: 0px;
 }
 .page-content > .user .content .overview .section .desktop .activity-history .history-day {
   background: #221f23;
