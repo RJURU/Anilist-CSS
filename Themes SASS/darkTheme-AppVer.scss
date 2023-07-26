@@ -69,22 +69,18 @@ body {
 							}
 							a {
 								color: $text;
-								&:hover {
+							}
+							section {
+								.secondary-links {
+									display: none;
+								}
+							}
+							&:hover {
+								a {
+									color: $accent;
 									.icon {
 										color: $accent;
 									}
-									color: $accent;
-								}
-							}
-							section {
-								.primary-link-text {
-									color: $text;
-									&:hover {
-										color: $accent;
-									}
-								}
-								.secondary-links {
-									display: none;
 								}
 							}
 						}

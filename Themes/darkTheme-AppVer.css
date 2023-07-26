@@ -66,20 +66,14 @@ body {
 #nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link a {
   color: #ffffff;
 }
-#nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link a:hover {
-  color: #1df1f1;
-}
-#nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link a:hover .icon {
-  color: #1df1f1;
-}
-#nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link section .primary-link-text {
-  color: #ffffff;
-}
-#nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link section .primary-link-text:hover {
-  color: #1df1f1;
-}
 #nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link section .secondary-links {
   display: none;
+}
+#nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link:hover a {
+  color: #1df1f1;
+}
+#nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link:hover a .icon {
+  color: #1df1f1;
 }
 #nav > .wrap .links > .browse-wrap > .dropdown .footer > a {
   color: #ffffff;
