@@ -37,6 +37,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
 }
 .nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(1)::before {
   content: url(../Icons/Home.svg);
