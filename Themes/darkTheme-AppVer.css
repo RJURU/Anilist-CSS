@@ -214,6 +214,43 @@ body {
   border-radius: 20px;
   color: #ffffff;
 }
+.page-content > .user .content .overview .section .desktop .section-header {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+.page-content > .user .content .overview .section .desktop .activity-history {
+  background: #302d31;
+  border-radius: 20px;
+}
+.page-content > .user .content .overview .section .desktop .activity-history .history-day {
+  background: #221f23;
+}
+.page-content > .user .content .overview .section .desktop .activity-history .history-day.lv-1 {
+  background: #094848;
+}
+.page-content > .user .content .overview .section .desktop .activity-history .history-day.lv-2 {
+  background: #0c6060;
+}
+.page-content > .user .content .overview .section .desktop .activity-history .history-day.lv-3 {
+  background: #0f7979;
+}
+.page-content > .user .content .overview .section .desktop .activity-history .history-day.lv-4 {
+  background: #119191;
+}
+.page-content > .user .content .overview .section .desktop .activity-history .history-day.lv-5 {
+  background: #14a9a9;
+}
+.page-content > .user .content .overview .section .desktop .activity-history .history-day.lv-6 {
+  background: #17c1c1;
+}
+.page-content > .user .content .overview .section .desktop .activity-history .history-day.lv-7 {
+  background: #1ad9d9;
+}
+.page-content > .user .content .overview .section .desktop .activity-history .history-day.lv-8, .page-content > .user .content .overview .section .desktop .activity-history .history-day.lv-9 {
+  background: #1df1f1;
+}
 
 .footer[data-v-0f519cab] {
   margin-left: 150px;

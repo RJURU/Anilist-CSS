@@ -4,6 +4,15 @@ $primary: #195bb8;
 $secondary: #302d31;
 $secondaryHv: #534f54;
 $accent: #1df1f1;
+
+//Accent Shades
+$accent10: #1ad9d9;
+$accent20: #17c1c1;
+$accent30: #14a9a9;
+$accent40: #119191;
+$accent50: #0f7979;
+$accent60: #0c6060;
+$accent70: #094848;
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
@@ -252,6 +261,46 @@ body {
 							background: $secondary;
 							border-radius: 20px;
 							color: $text;
+						}
+					}
+					.desktop {
+						.section-header {
+							font-size: 2rem;
+							font-weight: 600;
+							color: $text;
+							font-family: "Poppins", sans-serif;
+						}
+						.activity-history {
+							background: $secondary;
+							border-radius: 20px;
+							.history-day {
+								background: $background;
+								&.lv-1 {
+									background: $accent70;
+								}
+								&.lv-2 {
+									background: $accent60;
+								}
+								&.lv-3 {
+									background: $accent50;
+								}
+								&.lv-4 {
+									background: $accent40;
+								}
+								&.lv-5 {
+									background: $accent30;
+								}
+								&.lv-6 {
+									background: $accent20;
+								}
+								&.lv-7 {
+									background: $accent10;
+								}
+								&.lv-8,
+								&.lv-9 {
+									background: $accent;
+								}
+							}
 						}
 					}
 				}
