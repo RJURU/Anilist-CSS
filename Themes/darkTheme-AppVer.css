@@ -104,9 +104,9 @@ body {
 }
 
 .page-content {
-  padding: 100px;
+  padding: 50px;
   padding-top: 125px;
-  margin-left: 50px;
+  margin-left: 100px;
 }
 .page-content .nav-wrap {
   position: fixed;
