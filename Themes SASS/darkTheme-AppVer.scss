@@ -3,7 +3,10 @@ $background: #0f0f0f;
 $primary: #195bb8;
 $secondary: #262726;
 $accent: #1df1f1;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
 	background: $background;
+	color: $text;
+	font-family: "Poppins", sans-serif;
 }
