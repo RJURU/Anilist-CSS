@@ -13,6 +13,9 @@ $accent40: #119191;
 $accent50: #0f7979;
 $accent60: #0c6060;
 $accent70: #094848;
+
+//Other
+$radius: 0px;
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
@@ -218,7 +221,7 @@ body {
 		flex-direction: column;
 		gap: 50px;
 		.header-wrap {
-			border-radius: 20px;
+			border-radius: $radius;
 			overflow: hidden;
 			.banner {
 				.container {
@@ -259,7 +262,7 @@ body {
 					.about {
 						.content-wrap {
 							background: $secondary;
-							border-radius: 20px;
+							border-radius: $radius;
 							color: $text;
 						}
 					}
@@ -272,7 +275,7 @@ body {
 						}
 						.activity-history {
 							background: $secondary;
-							border-radius: 20px;
+							border-radius: $radius;
 							.history-day {
 								background: $background;
 								&.lv-1 {
