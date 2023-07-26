@@ -14,10 +14,11 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  width: fit-content;
+  width: 100px;
   height: 100vh;
   display: flex;
   align-items: center;
+  transition: width 500ms ease-out;
 }
 .nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] {
   padding: 0;
@@ -29,28 +30,29 @@ body {
 }
 .nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a {
   visibility: hidden;
+  transition: visibility 250ms linear 500ms;
 }
-.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(1)::after {
+.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(1)::before {
   content: url(../Icons/Home.svg);
   visibility: visible;
 }
-.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(2)::after {
+.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(2)::before {
   content: url(../Icons/Video.svg);
   visibility: visible;
 }
-.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(3)::after {
+.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(3)::before {
   content: url(../Icons/Book.svg);
   visibility: visible;
 }
-.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(4)::after {
+.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(4)::before {
   content: url(../Icons/Heart.svg);
   visibility: visible;
 }
-.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(5)::after {
+.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(5)::before {
   content: url(../Icons/Stats.svg);
   visibility: visible;
 }
-.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(6)::after {
+.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(6)::before {
   content: url(../Icons/Social.svg);
   visibility: visible;
 }
@@ -59,4 +61,12 @@ body {
 }
 .nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(8) {
   display: none;
+}
+.nav-wrap[data-v-1cc2919e]:hover {
+  width: 180px;
+  transition: width 500ms ease-in;
+}
+.nav-wrap[data-v-1cc2919e]:hover .nav[data-v-1cc2919e] a {
+  visibility: visible;
+  transition: visibility 250ms linear 500ms;
 }/*# sourceMappingURL=darkTheme-AppVer.css.map */

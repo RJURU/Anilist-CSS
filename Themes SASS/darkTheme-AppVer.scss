@@ -19,10 +19,11 @@ body {
 	position: fixed;
 	left: 0;
 	top: 0;
-	width: fit-content;
+	width: 100px;
 	height: 100vh;
 	display: flex;
 	align-items: center;
+	transition: width 500ms ease-out;
 	.nav[data-v-1cc2919e] {
 		padding: 0;
 		min-width: 100%;
@@ -32,38 +33,39 @@ body {
 		justify-content: space-evenly;
 		a {
 			visibility: hidden;
+			transition: visibility 250ms linear 500ms;
 			&:nth-child(1) {
-				&::after {
+				&::before {
 					content: url(../Icons/Home.svg);
 					visibility: visible;
 				}
 			}
 			&:nth-child(2) {
-				&::after {
+				&::before {
 					content: url(../Icons/Video.svg);
 					visibility: visible;
 				}
 			}
 			&:nth-child(3) {
-				&::after {
+				&::before {
 					content: url(../Icons/Book.svg);
 					visibility: visible;
 				}
 			}
 			&:nth-child(4) {
-				&::after {
+				&::before {
 					content: url(../Icons/Heart.svg);
 					visibility: visible;
 				}
 			}
 			&:nth-child(5) {
-				&::after {
+				&::before {
 					content: url(../Icons/Stats.svg);
 					visibility: visible;
 				}
 			}
 			&:nth-child(6) {
-				&::after {
+				&::before {
 					content: url(../Icons/Social.svg);
 					visibility: visible;
 				}
@@ -73,6 +75,16 @@ body {
 			}
 			&:nth-child(8) {
 				display: none;
+			}
+		}
+	}
+	&:hover {
+		width: 180px;
+		transition: width 500ms ease-in;
+		.nav[data-v-1cc2919e] {
+			a {
+				visibility: visible;
+				transition: visibility 250ms linear 500ms;
 			}
 		}
 	}
