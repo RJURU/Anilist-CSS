@@ -12,11 +12,6 @@ body {
 	font-family: "Poppins", sans-serif;
 }
 
-#nav,
-.page-content {
-	margin-left: 100px;
-}
-
 #nav {
 	margin-left: 150px;
 	width: calc(100% - 200px);
@@ -216,6 +211,43 @@ body {
 		.header-wrap {
 			border-radius: 20px;
 			overflow: hidden;
+			.banner {
+				.container {
+					display: flex;
+					align-items: center;
+					.banner-content {
+						display: flex;
+						align-items: center;
+						position: relative;
+						.name-wrapper {
+							.name {
+								font-size: 3rem;
+							}
+						}
+						.actions {
+							margin: 0;
+							position: absolute;
+							bottom: -10px;
+							left: 175px;
+							.nav-btn {
+								background: $primary;
+								&:hover {
+									background: $accent;
+								}
+							}
+							.dropdown {
+								display: none;
+							}
+						}
+					}
+				}
+			}
 		}
+	}
+}
+
+@media (min-width: 1540px) {
+	.container {
+		max-width: 100%;
 	}
 }

@@ -5,11 +5,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-#nav,
-.page-content {
-  margin-left: 100px;
-}
-
 #nav {
   margin-left: 150px;
   width: calc(100% - 200px);
@@ -183,4 +178,37 @@ body {
 .page-content > .user .header-wrap {
   border-radius: 20px;
   overflow: hidden;
+}
+.page-content > .user .header-wrap .banner .container {
+  display: flex;
+  align-items: center;
+}
+.page-content > .user .header-wrap .banner .container .banner-content {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.page-content > .user .header-wrap .banner .container .banner-content .name-wrapper .name {
+  font-size: 3rem;
+}
+.page-content > .user .header-wrap .banner .container .banner-content .actions {
+  margin: 0;
+  position: absolute;
+  bottom: -10px;
+  left: 175px;
+}
+.page-content > .user .header-wrap .banner .container .banner-content .actions .nav-btn {
+  background: #195bb8;
+}
+.page-content > .user .header-wrap .banner .container .banner-content .actions .nav-btn:hover {
+  background: #1df1f1;
+}
+.page-content > .user .header-wrap .banner .container .banner-content .actions .dropdown {
+  display: none;
+}
+
+@media (min-width: 1540px) {
+  .container {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=darkTheme-AppVer.css.map */
