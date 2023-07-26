@@ -207,6 +207,31 @@ body {
   display: none;
 }
 
+.footer[data-v-0f519cab] {
+  margin-left: 150px;
+  width: calc(100% - 200px);
+  border-radius: 20px 20px 0px 0px;
+  background: #302d31;
+  color: #ffffff;
+}
+.footer[data-v-0f519cab] .container .theme-selector {
+  display: none;
+}
+.footer[data-v-0f519cab] .container .links {
+  margin-left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer[data-v-0f519cab] .container .links section {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.footer[data-v-0f519cab] .container .links section a:hover {
+  color: #1df1f1;
+}
+
 @media (min-width: 1540px) {
   .container {
     max-width: 100%;
