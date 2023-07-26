@@ -45,56 +45,59 @@ body {
 						border-radius: 5px;
 					}
 				}
-				> .dropdown {
-					top: 60px;
-					background: $secondary;
-					&::before {
-						width: 90px;
-						height: 30px;
-						border-bottom: 0;
-						border-left: 0;
-						border-right: 0;
-						left: 0;
-						color: transparent;
+			}
+		}
+		.dropdown {
+			top: 60px;
+			left: 50%;
+			transform: translate(-50%);
+			background: $secondary;
+			animation: none;
+			&::before {
+				width: 100%;
+				height: 30px;
+				border-bottom: 0;
+				border-left: 0;
+				border-right: 0;
+				left: 0;
+				color: transparent;
+			}
+			.primary-links {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				.primary-link {
+					margin: 0;
+					.icon {
+						top: auto;
+						color: white;
 					}
-					.primary-links {
-						display: flex;
-						flex-direction: row;
-						justify-content: space-around;
-						.primary-link {
-							margin: 0;
+					a {
+						color: $text;
+					}
+					section {
+						.secondary-links {
+							display: none;
+						}
+					}
+					&:hover {
+						a {
+							color: $accent;
 							.icon {
-								top: auto;
-								color: white;
-							}
-							a {
-								color: $text;
-							}
-							section {
-								.secondary-links {
-									display: none;
-								}
-							}
-							&:hover {
-								a {
-									color: $accent;
-									.icon {
-										color: $accent;
-									}
-								}
+								color: $accent;
 							}
 						}
 					}
-					.footer {
-						background: $secondaryHv;
-						> a {
-							color: $text;
-							&:hover {
-								color: $accent;
-								.icon {
-									color: $accent;
-								}
-							}
+				}
+			}
+			.footer {
+				background: $secondaryHv;
+				> a {
+					color: $text;
+					&:hover {
+						color: $accent;
+						.icon {
+							color: $accent;
 						}
 					}
 				}

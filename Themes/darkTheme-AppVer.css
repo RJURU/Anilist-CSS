@@ -38,12 +38,15 @@ body {
   background: #195bb8;
   border-radius: 5px;
 }
-#nav > .wrap .links > .browse-wrap > .dropdown {
+#nav > .wrap .dropdown {
   top: 60px;
+  left: 50%;
+  transform: translate(-50%);
   background: #302d31;
+  animation: none;
 }
-#nav > .wrap .links > .browse-wrap > .dropdown::before {
-  width: 90px;
+#nav > .wrap .dropdown::before {
+  width: 100%;
   height: 30px;
   border-bottom: 0;
   border-left: 0;
@@ -51,40 +54,40 @@ body {
   left: 0;
   color: transparent;
 }
-#nav > .wrap .links > .browse-wrap > .dropdown .primary-links {
+#nav > .wrap .dropdown .primary-links {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-#nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link {
+#nav > .wrap .dropdown .primary-links .primary-link {
   margin: 0;
 }
-#nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link .icon {
+#nav > .wrap .dropdown .primary-links .primary-link .icon {
   top: auto;
   color: white;
 }
-#nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link a {
+#nav > .wrap .dropdown .primary-links .primary-link a {
   color: #ffffff;
 }
-#nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link section .secondary-links {
+#nav > .wrap .dropdown .primary-links .primary-link section .secondary-links {
   display: none;
 }
-#nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link:hover a {
+#nav > .wrap .dropdown .primary-links .primary-link:hover a {
   color: #1df1f1;
 }
-#nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link:hover a .icon {
+#nav > .wrap .dropdown .primary-links .primary-link:hover a .icon {
   color: #1df1f1;
 }
-#nav > .wrap .links > .browse-wrap > .dropdown .footer {
+#nav > .wrap .dropdown .footer {
   background: #534f54;
 }
-#nav > .wrap .links > .browse-wrap > .dropdown .footer > a {
+#nav > .wrap .dropdown .footer > a {
   color: #ffffff;
 }
-#nav > .wrap .links > .browse-wrap > .dropdown .footer > a:hover {
+#nav > .wrap .dropdown .footer > a:hover {
   color: #1df1f1;
 }
-#nav > .wrap .links > .browse-wrap > .dropdown .footer > a:hover .icon {
+#nav > .wrap .dropdown .footer > a:hover .icon {
   color: #1df1f1;
 }
 
