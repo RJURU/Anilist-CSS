@@ -75,6 +75,9 @@ body {
 #nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link:hover a .icon {
   color: #1df1f1;
 }
+#nav > .wrap .links > .browse-wrap > .dropdown .footer {
+  background: #534f54;
+}
 #nav > .wrap .links > .browse-wrap > .dropdown .footer > a {
   color: #ffffff;
 }
