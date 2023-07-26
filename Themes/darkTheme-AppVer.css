@@ -252,6 +252,47 @@ body {
   background: #1df1f1;
 }
 
+.tooltip {
+  color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.tooltip .title {
+  color: #ffffff;
+  background: #302d31;
+}
+.tooltip .content {
+  color: #ffffff;
+  background: #534f54;
+}
+.tooltip .content .circle {
+  background: #221f23;
+}
+.tooltip .content .circle.lv-1 {
+  background: #094848;
+}
+.tooltip .content .circle.lv-2 {
+  background: #0c6060;
+}
+.tooltip .content .circle.lv-3 {
+  background: #0f7979;
+}
+.tooltip .content .circle.lv-4 {
+  background: #119191;
+}
+.tooltip .content .circle.lv-5 {
+  background: #14a9a9;
+}
+.tooltip .content .circle.lv-6 {
+  background: #17c1c1;
+}
+.tooltip .content .circle.lv-7 {
+  background: #1ad9d9;
+}
+.tooltip .content .circle.lv-8, .tooltip .content .circle.lv-9 {
+  background: #1df1f1;
+}
+
 .footer[data-v-0f519cab] {
   margin-left: 150px;
   width: calc(100% - 200px);
