@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 body {
-  background: #0f0f0f;
+  background: #221f23;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
 }
 
 #nav,
 .page-content {
-  margin-left: 120px;
+  margin-left: 100px;
 }
 
 .nav-wrap[data-v-1cc2919e] {
@@ -22,7 +22,7 @@ body {
 .nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] {
   padding: 0;
   min-width: 100%;
-  height: 80%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -31,57 +31,38 @@ body {
   visibility: hidden;
   position: relative;
 }
-.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(1)::before {
-  content: url(../Icons/Home.svg);
+.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:before {
   visibility: visible;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(1)::before {
+  content: url(../Icons/Home.svg);
 }
 .nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(2)::before {
   content: url(../Icons/Video.svg);
-  visibility: visible;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(3)::before {
   content: url(../Icons/Book.svg);
-  visibility: visible;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(4)::before {
   content: url(../Icons/Heart.svg);
-  visibility: visible;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(5)::before {
   content: url(../Icons/Stats.svg);
-  visibility: visible;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(6)::before {
   content: url(../Icons/Social.svg);
-  visibility: visible;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(7) {
   display: none;
 }
 .nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(8) {
   display: none;
+}
+.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:hover::before {
+  background: #534f54;
+  border-radius: 5px;
 }/*# sourceMappingURL=darkTheme-AppVer.css.map */
