@@ -81,6 +81,9 @@ body {
 #nav > .wrap .links > .browse-wrap > .dropdown .footer > a:hover {
   color: #1df1f1;
 }
+#nav > .wrap .links > .browse-wrap > .dropdown .footer > a:hover .icon {
+  color: #1df1f1;
+}
 
 .page-content {
   padding: 100px;

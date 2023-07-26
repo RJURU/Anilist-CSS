@@ -90,6 +90,9 @@ body {
 							color: $text;
 							&:hover {
 								color: $accent;
+								.icon {
+									color: $accent;
+								}
 							}
 						}
 					}
