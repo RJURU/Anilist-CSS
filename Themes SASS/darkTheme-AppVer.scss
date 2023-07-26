@@ -17,7 +17,96 @@ body {
 	margin-left: 100px;
 }
 
+#nav {
+	margin-left: 150px;
+	width: calc(100% - 200px);
+	border-radius: 0px 0px 20px 20px;
+	background: $secondary;
+	> .wrap {
+		.logo {
+			display: none;
+		}
+		.links {
+			> .link {
+				font-size: 1.5rem;
+				color: $text;
+				&:hover {
+					background: $primary;
+					border-radius: 5px;
+				}
+			}
+			> .browse-wrap {
+				position: relative;
+				> .link {
+					font-size: 1.5rem;
+					color: $text;
+					&:hover {
+						background: $primary;
+						border-radius: 5px;
+					}
+				}
+				> .dropdown {
+					top: 60px;
+					background: $secondary;
+					&::before {
+						width: 90px;
+						height: 30px;
+						border-bottom: 0;
+						border-left: 0;
+						border-right: 0;
+						left: 0;
+						color: transparent;
+					}
+					.primary-links {
+						display: flex;
+						flex-direction: row;
+						justify-content: space-around;
+						.primary-link {
+							margin: 0;
+							.icon {
+								top: auto;
+								color: white;
+							}
+							a {
+								color: $text;
+								&:hover {
+									.icon {
+										color: $accent;
+									}
+									color: $accent;
+								}
+							}
+							section {
+								.primary-link-text {
+									color: $text;
+									&:hover {
+										color: $accent;
+									}
+								}
+								.secondary-links {
+									display: none;
+								}
+							}
+						}
+					}
+					.footer {
+						> a {
+							color: $text;
+							&:hover {
+								color: $accent;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 .page-content {
+	padding: 50px;
+	padding-top: 125px;
+	margin-left: 50px;
 	.nav-wrap {
 		position: fixed;
 		left: 0;
@@ -34,11 +123,6 @@ body {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-evenly;
-			.router-link-active {
-				&::before {
-					background: $primary;
-				}
-			}
 			a {
 				visibility: hidden;
 				position: relative;
@@ -92,7 +176,27 @@ body {
 						border-radius: 5px;
 					}
 				}
+				&.router-link-active {
+					&::before {
+						background: $primary;
+					}
+					&:hover {
+						cursor: default;
+						&::before {
+							background: $primary;
+						}
+					}
+				}
 			}
+		}
+	}
+	> .user {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+		.header-wrap {
+			border-radius: 20px;
+			overflow: hidden;
 		}
 	}
 }

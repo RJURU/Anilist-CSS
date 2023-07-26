@@ -10,6 +10,89 @@ body {
   margin-left: 100px;
 }
 
+#nav {
+  margin-left: 150px;
+  width: calc(100% - 200px);
+  border-radius: 0px 0px 20px 20px;
+  background: #302d31;
+}
+#nav > .wrap .logo {
+  display: none;
+}
+#nav > .wrap .links > .link {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+#nav > .wrap .links > .link:hover {
+  background: #195bb8;
+  border-radius: 5px;
+}
+#nav > .wrap .links > .browse-wrap {
+  position: relative;
+}
+#nav > .wrap .links > .browse-wrap > .link {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+#nav > .wrap .links > .browse-wrap > .link:hover {
+  background: #195bb8;
+  border-radius: 5px;
+}
+#nav > .wrap .links > .browse-wrap > .dropdown {
+  top: 60px;
+  background: #302d31;
+}
+#nav > .wrap .links > .browse-wrap > .dropdown::before {
+  width: 90px;
+  height: 30px;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  left: 0;
+  color: transparent;
+}
+#nav > .wrap .links > .browse-wrap > .dropdown .primary-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link {
+  margin: 0;
+}
+#nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link .icon {
+  top: auto;
+  color: white;
+}
+#nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link a {
+  color: #ffffff;
+}
+#nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link a:hover {
+  color: #1df1f1;
+}
+#nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link a:hover .icon {
+  color: #1df1f1;
+}
+#nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link section .primary-link-text {
+  color: #ffffff;
+}
+#nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link section .primary-link-text:hover {
+  color: #1df1f1;
+}
+#nav > .wrap .links > .browse-wrap > .dropdown .primary-links .primary-link section .secondary-links {
+  display: none;
+}
+#nav > .wrap .links > .browse-wrap > .dropdown .footer > a {
+  color: #ffffff;
+}
+#nav > .wrap .links > .browse-wrap > .dropdown .footer > a:hover {
+  color: #1df1f1;
+}
+
+.page-content {
+  padding: 50px;
+  padding-top: 125px;
+  margin-left: 50px;
+}
 .page-content .nav-wrap {
   position: fixed;
   left: 0;
@@ -27,9 +110,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-}
-.page-content .nav-wrap .nav .router-link-active::before {
-  background: #195bb8;
 }
 .page-content .nav-wrap .nav a {
   visibility: hidden;
@@ -70,4 +150,22 @@ body {
 .page-content .nav-wrap .nav a:hover::before {
   background: #534f54;
   border-radius: 5px;
+}
+.page-content .nav-wrap .nav a.router-link-active::before {
+  background: #195bb8;
+}
+.page-content .nav-wrap .nav a.router-link-active:hover {
+  cursor: default;
+}
+.page-content .nav-wrap .nav a.router-link-active:hover::before {
+  background: #195bb8;
+}
+.page-content > .user {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.page-content > .user .header-wrap {
+  border-radius: 20px;
+  overflow: hidden;
 }/*# sourceMappingURL=darkTheme-AppVer.css.map */
