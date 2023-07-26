@@ -3,4 +3,60 @@ body {
   background: #0f0f0f;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
+}
+
+#nav,
+.page-content {
+  margin-left: 120px;
+}
+
+.nav-wrap[data-v-1cc2919e] {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: fit-content;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] {
+  padding: 0;
+  min-width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a {
+  visibility: hidden;
+}
+.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(1)::after {
+  content: url(../Icons/Home.svg);
+  visibility: visible;
+}
+.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(2)::after {
+  content: url(../Icons/Video.svg);
+  visibility: visible;
+}
+.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(3)::after {
+  content: url(../Icons/Book.svg);
+  visibility: visible;
+}
+.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(4)::after {
+  content: url(../Icons/Heart.svg);
+  visibility: visible;
+}
+.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(5)::after {
+  content: url(../Icons/Stats.svg);
+  visibility: visible;
+}
+.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(6)::after {
+  content: url(../Icons/Social.svg);
+  visibility: visible;
+}
+.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(7) {
+  display: none;
+}
+.nav-wrap[data-v-1cc2919e] .nav[data-v-1cc2919e] a:nth-child(8) {
+  display: none;
 }/*# sourceMappingURL=darkTheme-AppVer.css.map */

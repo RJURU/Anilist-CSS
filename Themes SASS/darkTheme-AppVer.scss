@@ -1,7 +1,7 @@
 $text: #ffffff;
 $background: #0f0f0f;
 $primary: #195bb8;
-$secondary: #262726;
+$secondary: #1b1b1d;
 $accent: #1df1f1;
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
@@ -9,4 +9,71 @@ body {
 	background: $background;
 	color: $text;
 	font-family: "Poppins", sans-serif;
+}
+
+#nav,
+.page-content {
+	margin-left: 120px;
+}
+.nav-wrap[data-v-1cc2919e] {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: fit-content;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	.nav[data-v-1cc2919e] {
+		padding: 0;
+		min-width: 100%;
+		height: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		a {
+			visibility: hidden;
+			&:nth-child(1) {
+				&::after {
+					content: url(../Icons/Home.svg);
+					visibility: visible;
+				}
+			}
+			&:nth-child(2) {
+				&::after {
+					content: url(../Icons/Video.svg);
+					visibility: visible;
+				}
+			}
+			&:nth-child(3) {
+				&::after {
+					content: url(../Icons/Book.svg);
+					visibility: visible;
+				}
+			}
+			&:nth-child(4) {
+				&::after {
+					content: url(../Icons/Heart.svg);
+					visibility: visible;
+				}
+			}
+			&:nth-child(5) {
+				&::after {
+					content: url(../Icons/Stats.svg);
+					visibility: visible;
+				}
+			}
+			&:nth-child(6) {
+				&::after {
+					content: url(../Icons/Social.svg);
+					visibility: visible;
+				}
+			}
+			&:nth-child(7) {
+				display: none;
+			}
+			&:nth-child(8) {
+				display: none;
+			}
+		}
+	}
 }
