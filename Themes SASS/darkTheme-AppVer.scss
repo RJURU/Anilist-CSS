@@ -68,6 +68,7 @@ body {
 				justify-content: space-around;
 				.primary-link {
 					margin: 0;
+					color: $text;
 					.icon {
 						top: auto;
 						color: white;
@@ -83,9 +84,12 @@ body {
 					&:hover {
 						a {
 							color: $accent;
-							.icon {
-								color: $accent;
-							}
+						}
+						.icon {
+							color: $accent;
+						}
+						.label {
+							color: $accent;
 						}
 					}
 				}
@@ -99,6 +103,18 @@ body {
 						.icon {
 							color: $accent;
 						}
+					}
+				}
+			}
+		}
+		.user {
+			.user-wrap {
+				.dropdown {
+					top: 70px;
+					.primary-links {
+						flex-direction: column;
+						gap: 15px;
+						margin-bottom: 0;
 					}
 				}
 			}
