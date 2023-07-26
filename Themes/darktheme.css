@@ -1,0 +1,45 @@
+body {
+  background: #010818;
+}
+
+#nav {
+  position: fixed;
+  left: 0;
+  top: 0 !important;
+  height: 100vh;
+  width: fit-content;
+  background: #010b22;
+}
+#nav .wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  justify-content: space-between;
+}
+#nav .wrap .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 10%;
+}
+#nav .wrap .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 75%;
+  color: #e2eafe;
+}
+#nav .wrap .search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 5%;
+  margin: 0;
+}
+#nav .wrap .user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 10%;
+}/*# sourceMappingURL=darktheme.css.map */

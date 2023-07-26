@@ -1,0 +1,55 @@
+$text: #e2eafe;
+$background: #010818;
+$primary: #0a4ff0;
+$secondary: #010b22;
+$accent: #0a4ce6;
+
+body {
+	background: $background;
+}
+
+#nav {
+	position: fixed;
+	left: 0;
+	top: 0 !important;
+	height: 100vh;
+	width: fit-content;
+	background: $secondary;
+	.wrap {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		justify-content: space-between;
+		.logo {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			height: 10%;
+		}
+		.links {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			height: 75%;
+			color: $text;
+			a {
+				&:nth-child(1) {
+				}
+			}
+		}
+		.search {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 5%;
+			margin: 0;
+		}
+		.user {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			height: 10%;
+		}
+	}
+}
