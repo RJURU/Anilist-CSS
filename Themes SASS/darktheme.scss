@@ -42,20 +42,6 @@ body {
 					top: 50%;
 					transform: translate(-50%, -50%);
 				}
-				> span {
-					> a {
-						&:nth-child(1) {
-							&::after {
-								content: url(../Icons/Browse.svg);
-								visibility: visible;
-								position: absolute;
-								left: 50%;
-								top: 50%;
-								transform: translate(-50%, -50%);
-							}
-						}
-					}
-				}
 				&:nth-child(1) {
 					&::after {
 						content: url(../Icons/Home.svg);
@@ -79,6 +65,21 @@ body {
 				&:nth-child(6) {
 					&::after {
 						content: url(../Icons/People.svg);
+					}
+				}
+			}
+
+			> span {
+				> a {
+					&:nth-child(1) {
+						&::after {
+							content: url(../Icons/Browse.svg);
+							visibility: visible;
+							position: absolute;
+							left: 50%;
+							top: 50%;
+							transform: translate(-50%, -50%);
+						}
 					}
 				}
 			}

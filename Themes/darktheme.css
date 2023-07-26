@@ -40,14 +40,6 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-#nav .wrap .links > a > span > a:nth-child(1)::after {
-  content: url(../Icons/Browse.svg);
-  visibility: visible;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
 #nav .wrap .links > a:nth-child(1)::after {
   content: url(../Icons/Home.svg);
 }
@@ -62,6 +54,14 @@ body {
 }
 #nav .wrap .links > a:nth-child(6)::after {
   content: url(../Icons/People.svg);
+}
+#nav .wrap .links > span > a:nth-child(1)::after {
+  content: url(../Icons/Browse.svg);
+  visibility: visible;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 #nav .wrap .search {
   display: flex;
