@@ -453,7 +453,7 @@ body {
   color: #ffffff;
   font-family: "Poppins", sans-serif;
   padding: 1rem;
-  background: #534f54;
+  background: #302d31;
   border-radius: 4px;
   display: flex;
   flex-direction: row;
@@ -512,7 +512,6 @@ body {
   -webkit-mask: url(../Icons/List.svg) no-repeat 50% 50%;
   mask: url(../Icons/List.svg) no-repeat 50% 50%;
 }
-
 .tooltip {
   color: #ffffff;
   border-radius: 10px;

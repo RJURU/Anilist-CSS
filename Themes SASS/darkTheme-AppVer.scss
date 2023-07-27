@@ -572,7 +572,7 @@ body {
 							color: $text;
 							font-family: "Poppins", sans-serif;
 							padding: 1rem;
-							background: $secondary;
+							background: $primary;
 							border-radius: 4px;
 							display: flex;
 							flex-direction: row;
@@ -648,6 +648,8 @@ body {
 									}
 								}
 							}
+						}
+						.activity-edit {
 						}
 					}
 				}
