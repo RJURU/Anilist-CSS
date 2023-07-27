@@ -125,33 +125,45 @@ body {
   visibility: hidden;
   position: relative;
   height: 100%;
+  width: 80px;
 }
 .page-content .nav-wrap .nav a:before {
+  content: "";
   visibility: visible;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
   border-radius: 5px;
+  height: 48px;
+  width: 48px;
+  display: inline-block;
+  -webkit-mask-size: cover;
+  mask-size: cover;
 }
 .page-content .nav-wrap .nav a:nth-child(1)::before {
-  content: url(../Icons/Home.svg);
+  -webkit-mask: url(../Icons/Home.svg) no-repeat 50% 50%;
+  mask: url(../Icons/Home.svg) no-repeat 50% 50%;
 }
 .page-content .nav-wrap .nav a:nth-child(2)::before {
-  content: url(../Icons/Video.svg);
+  -webkit-mask: url(../Icons/Video.svg) no-repeat 50% 50%;
+  mask: url(../Icons/Video.svg) no-repeat 50% 50%;
 }
 .page-content .nav-wrap .nav a:nth-child(3)::before {
-  content: url(../Icons/Book.svg);
+  -webkit-mask: url(../Icons/Book.svg) no-repeat 50% 50%;
+  mask: url(../Icons/Book.svg) no-repeat 50% 50%;
 }
 .page-content .nav-wrap .nav a:nth-child(4)::before {
-  content: url(../Icons/Heart.svg);
+  -webkit-mask: url(../Icons/Heart.svg) no-repeat 50% 50%;
+  mask: url(../Icons/Heart.svg) no-repeat 50% 50%;
 }
 .page-content .nav-wrap .nav a:nth-child(5)::before {
-  content: url(../Icons/Stats.svg);
+  -webkit-mask: url(../Icons/Stats.svg) no-repeat 50% 50%;
+  mask: url(../Icons/Stats.svg) no-repeat 50% 50%;
 }
 .page-content .nav-wrap .nav a:nth-child(6)::before {
-  content: url(../Icons/Social.svg);
+  -webkit-mask: url(../Icons/Social.svg) no-repeat 50% 50%;
+  mask: url(../Icons/Social.svg) no-repeat 50% 50%;
 }
 .page-content .nav-wrap .nav a:nth-child(7) {
   display: none;
@@ -275,7 +287,7 @@ body {
   width: 60%;
 }
 .page-content > .user .content .overview .section .desktop .genre-overview .genres .genre .amount {
-  background: #221f23;
+  background: #534f54;
   padding: 10px;
   width: 30%;
   border-radius: 4px;
@@ -335,7 +347,7 @@ body {
   background: #119191 !important;
 }
 .page-content > .user .content .overview .section .desktop .genre-overview .genres .genre:nth-child(5) .amount {
-  color: #119191 !important;
+  color: #14a9a9 !important;
 }
 .page-content > .user .content .overview .section .desktop .genre-overview .genres .genre:nth-child(5):before {
   content: "#5";
@@ -433,6 +445,12 @@ body {
 }
 .page-content > .user .content .overview .section .stats-wrap .content-wrap .footer .progress .bar {
   background: linear-gradient(270deg, #1df1f1, #119191);
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .section-header {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
 }
 
 .tooltip {

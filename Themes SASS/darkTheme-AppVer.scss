@@ -1,3 +1,7 @@
+//Imports
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+//Base Colours
 $text: #ffffff;
 $background: #221f23;
 $primary: #302d31;
@@ -12,9 +16,6 @@ $accent40: #119191;
 $accent50: #0f7979;
 $accent60: #0c6060;
 $accent70: #094848;
-
-//Other
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
 	background: $background;
@@ -151,43 +152,55 @@ body {
 				visibility: hidden;
 				position: relative;
 				height: 100%;
+				width: 80px;
 				&:before {
+					content: "";
 					visibility: visible;
 					position: absolute;
 					top: 50%;
 					left: 50%;
 					transform: translate(-50%, -50%);
-					width: 100%;
 					border-radius: 5px;
+					height: 48px;
+					width: 48px;
+					display: inline-block;
+					-webkit-mask-size: cover;
+					mask-size: cover;
 				}
 				&:nth-child(1) {
 					&::before {
-						content: url(../Icons/Home.svg);
+						-webkit-mask: url(../Icons/Home.svg) no-repeat 50% 50%;
+						mask: url(../Icons/Home.svg) no-repeat 50% 50%;
 					}
 				}
 				&:nth-child(2) {
 					&::before {
-						content: url(../Icons/Video.svg);
+						-webkit-mask: url(../Icons/Video.svg) no-repeat 50% 50%;
+						mask: url(../Icons/Video.svg) no-repeat 50% 50%;
 					}
 				}
 				&:nth-child(3) {
 					&::before {
-						content: url(../Icons/Book.svg);
+						-webkit-mask: url(../Icons/Book.svg) no-repeat 50% 50%;
+						mask: url(../Icons/Book.svg) no-repeat 50% 50%;
 					}
 				}
 				&:nth-child(4) {
 					&::before {
-						content: url(../Icons/Heart.svg);
+						-webkit-mask: url(../Icons/Heart.svg) no-repeat 50% 50%;
+						mask: url(../Icons/Heart.svg) no-repeat 50% 50%;
 					}
 				}
 				&:nth-child(5) {
 					&::before {
-						content: url(../Icons/Stats.svg);
+						-webkit-mask: url(../Icons/Stats.svg) no-repeat 50% 50%;
+						mask: url(../Icons/Stats.svg) no-repeat 50% 50%;
 					}
 				}
 				&:nth-child(6) {
 					&::before {
-						content: url(../Icons/Social.svg);
+						-webkit-mask: url(../Icons/Social.svg) no-repeat 50% 50%;
+						mask: url(../Icons/Social.svg) no-repeat 50% 50%;
 					}
 				}
 				&:nth-child(7) {
@@ -326,7 +339,7 @@ body {
 										width: 60%;
 									}
 									.amount {
-										background: $background;
+										background: $secondary;
 										padding: 10px;
 										width: 30%;
 										border-radius: 4px;
@@ -395,7 +408,7 @@ body {
 											background: $accent40 !important;
 										}
 										.amount {
-											color: $accent40 !important;
+											color: $accent30 !important;
 										}
 										&:before {
 											content: "#5";
@@ -549,6 +562,14 @@ body {
 									}
 								}
 							}
+						}
+					}
+					.activity-feed-wrap {
+						.section-header {
+							font-size: 2rem;
+							font-weight: 600;
+							color: $text;
+							font-family: "Poppins", sans-serif;
 						}
 					}
 				}
