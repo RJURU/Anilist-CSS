@@ -682,7 +682,7 @@ body {
   stroke: #1df1f1;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-text .wrap .actions {
-  left: 15px;
+  left: 10px;
 }
 
 .activity-extras-dropdown {
@@ -691,10 +691,10 @@ body {
   margin-top: 12px !important;
 }
 .activity-extras-dropdown .popper__arrow {
-  border-bottom-color: #534f54;
+  border-bottom-color: #534f54 !important;
 }
 .activity-extras-dropdown__item:hover {
-  background: #14a9a9;
+  background: #14a9a9 !important;
 }
 
 .tooltip {

@@ -836,7 +836,7 @@ body {
 							.activity-text {
 								.wrap {
 									.actions {
-										left: 15px;
+										left: 10px;
 									}
 								}
 							}
@@ -853,11 +853,11 @@ body {
 	background: $secondary !important;
 	margin-top: 12px !important;
 	.popper__arrow {
-		border-bottom-color: $secondary;
+		border-bottom-color: $secondary !important;
 	}
 	&__item {
 		&:hover {
-			background: $accent30;
+			background: $accent30 !important;
 		}
 	}
 }
