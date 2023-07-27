@@ -523,7 +523,7 @@ body {
   padding: 5px;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-edit .markdown-editor > div:hover {
-  color: #1df1f1;
+  color: #1df1f1 !important;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-edit .input textarea {
   background: #302d31;

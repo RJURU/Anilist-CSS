@@ -659,7 +659,7 @@ body {
 									display: flex;
 									padding: 5px;
 									&:hover {
-										color: $accent;
+										color: $accent !important;
 									}
 								}
 							}
