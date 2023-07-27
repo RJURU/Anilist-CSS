@@ -717,6 +717,7 @@ body {
 										flex-direction: row;
 										align-items: center;
 										height: 30px;
+										gap: 5px;
 										.action {
 											height: 26px;
 											width: 26px;
@@ -728,6 +729,7 @@ body {
 											align-items: center;
 											padding: 5px;
 											color: $text;
+											margin-left: 0px;
 											&.active {
 												color: $accent;
 											}
@@ -744,8 +746,8 @@ body {
 										}
 										> span {
 											svg {
-												height: 26px;
-												width: 26px;
+												height: 100%;
+												width: 100%;
 											}
 										}
 										time {
