@@ -134,7 +134,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 5px;
+  border-radius: 4px;
   height: 48px;
   width: 48px;
   display: inline-block;
@@ -452,6 +452,60 @@ body {
   font-weight: 600;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
+  padding: 1rem;
+  background: #534f54;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .section-header .el-dropdown {
+  float: none;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .section-header .el-dropdown .el-dropdown-menu {
+  padding: 0;
+  height: 100%;
+  display: flex !important;
+  flex-direction: row;
+  margin: 0;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .section-header .el-dropdown .el-dropdown-menu__item {
+  visibility: hidden;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .section-header .el-dropdown .el-dropdown-menu__item::after {
+  content: "";
+  visibility: visible;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background: #ffffff;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .section-header .el-dropdown .el-dropdown-menu__item:hover::after {
+  background-color: #1df1f1;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .section-header .el-dropdown .el-dropdown-menu__item:nth-child(1)::after {
+  -webkit-mask: url(../Icons/All.svg) no-repeat 50% 50%;
+  mask: url(../Icons/All.svg) no-repeat 50% 50%;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .section-header .el-dropdown .el-dropdown-menu__item:nth-child(2)::after {
+  -webkit-mask: url(../Icons/Post.svg) no-repeat 50% 50%;
+  mask: url(../Icons/Post.svg) no-repeat 50% 50%;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .section-header .el-dropdown .el-dropdown-menu__item:nth-child(3)::after {
+  -webkit-mask: url(../Icons/Message.svg) no-repeat 50% 50%;
+  mask: url(../Icons/Message.svg) no-repeat 50% 50%;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .section-header .el-dropdown .el-dropdown-menu__item:nth-child(4)::after {
+  -webkit-mask: url(../Icons/List.svg) no-repeat 50% 50%;
+  mask: url(../Icons/List.svg) no-repeat 50% 50%;
 }
 
 .tooltip {
