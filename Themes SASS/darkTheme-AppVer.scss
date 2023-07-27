@@ -712,21 +712,42 @@ body {
 									.time {
 										top: unset;
 										right: 15px;
-										bottom: 7px;
+										bottom: 2px;
+										display: flex;
+										flex-direction: row;
+										align-items: center;
+										&:hover {
+											background: transparent;
+										}
+										time {
+											color: $text;
+											font-size: 1.25rem;
+											transform: translate(0px, 2px);
+										}
+										.action {
+											height: 26px;
+											width: 26px;
+											background: $secondary;
+											border-radius: 4px;
+										}
 									}
 									.actions {
 										right: unset;
 										left: 80px;
 										bottom: 2px;
 										color: $text;
+										display: flex;
+										flex-direction: row;
+										align-items: center;
 										.action {
+											position: relative;
 											.count,
 											.button .count {
 												color: $text !important;
 												font-size: 1.6rem;
 												position: absolute;
 												bottom: 100%;
-												left: 50%;
+												left: 56%;
 												transform: translate(-50%);
 												background: $secondary;
 												padding: 5px;
@@ -740,6 +761,10 @@ body {
 												border-radius: 4px;
 												stroke: $text;
 												background: $secondary;
+												&:hover {
+													color: $accent;
+													stroke: $accent;
+												}
 											}
 											.like-wrap {
 												.users {
@@ -750,7 +775,14 @@ body {
 													flex-direction: row;
 													gap: 5px;
 													align-items: center;
+													.count {
+														left: 50%;
+													}
 												}
+											}
+											.button.liked svg {
+												color: $accent;
+												stroke: $accent;
 											}
 											&:hover {
 												.count,

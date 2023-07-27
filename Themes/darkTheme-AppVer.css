@@ -568,13 +568,36 @@ body {
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .time {
   top: unset;
   right: 15px;
-  bottom: 7px;
+  bottom: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .time:hover {
+  background: transparent;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .time time {
+  color: #ffffff;
+  font-size: 1.25rem;
+  transform: translate(0px, 2px);
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .time .action {
+  height: 26px;
+  width: 26px;
+  background: #534f54;
+  border-radius: 4px;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions {
   right: unset;
   left: 80px;
   bottom: 2px;
   color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action {
+  position: relative;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action .count,
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action .button .count {
@@ -582,7 +605,7 @@ body {
   font-size: 1.6rem;
   position: absolute;
   bottom: 100%;
-  left: 50%;
+  left: 56%;
   transform: translate(-50%);
   background: #534f54;
   padding: 5px;
@@ -597,6 +620,10 @@ body {
   stroke: #ffffff;
   background: #534f54;
 }
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action svg:hover {
+  color: #1df1f1;
+  stroke: #1df1f1;
+}
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action .like-wrap .users {
   display: none !important;
 }
@@ -605,6 +632,13 @@ body {
   flex-direction: row;
   gap: 5px;
   align-items: center;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action .like-wrap .button .count {
+  left: 50%;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action .button.liked svg {
+  color: #1df1f1;
+  stroke: #1df1f1;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action:hover .count,
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action:hover .button .count {
