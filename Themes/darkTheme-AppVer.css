@@ -140,6 +140,7 @@ body {
   display: inline-block;
   -webkit-mask-size: cover;
   mask-size: cover;
+  background: #ffffff;
 }
 .page-content .nav-wrap .nav a:nth-child(1)::before {
   -webkit-mask: url(../Icons/Home.svg) no-repeat 50% 50%;

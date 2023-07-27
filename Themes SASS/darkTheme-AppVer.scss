@@ -166,6 +166,7 @@ body {
 					display: inline-block;
 					-webkit-mask-size: cover;
 					mask-size: cover;
+					background: $text;
 				}
 				&:nth-child(1) {
 					&::before {
