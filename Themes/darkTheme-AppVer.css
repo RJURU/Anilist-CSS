@@ -272,7 +272,7 @@ body {
 .page-content > .user .content .overview .section .desktop .genre-overview .genres .genre .amount {
   background: #221f23;
   padding: 10px;
-  width: 40%;
+  width: 30%;
   border-radius: 4px;
   font-size: 1.5rem;
 }
@@ -284,6 +284,7 @@ body {
   font-size: 1.5rem;
   padding: 10px;
   border-radius: 4px;
+  width: 10%;
 }
 .page-content > .user .content .overview .section .desktop .genre-overview .genres .genre:nth-child(1) .name {
   background: #1df1f1 !important;
