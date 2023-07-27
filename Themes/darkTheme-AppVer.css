@@ -249,6 +249,110 @@ body {
 .page-content > .user .content .overview .section .desktop .activity-history .history-day.lv-8, .page-content > .user .content .overview .section .desktop .activity-history .history-day.lv-9 {
   background: #1df1f1;
 }
+.page-content > .user .content .overview .section .desktop .genre-overview {
+  background: #302d31;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres .genre {
+  display: flex !important;
+  flex-direction: row;
+  gap: 10px;
+  font-weight: 800;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres .genre .name {
+  padding: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+  width: 60;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres .genre .amount {
+  background: #221f23;
+  padding: 10px;
+  width: 40%;
+  border-radius: 4px;
+  font-size: 1.5rem;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres .genre .amount .label {
+  color: #ffffff;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres .genre::before {
+  display: block;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 4px;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres .genre:nth-child(1) .name {
+  background: #1df1f1 !important;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres .genre:nth-child(1) .amount {
+  color: #1df1f1 !important;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres .genre:nth-child(1):before {
+  content: "#1";
+  background: #1df1f1;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres .genre:nth-child(2) .name {
+  background: #1ad9d9 !important;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres .genre:nth-child(2) .amount {
+  color: #1ad9d9 !important;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres .genre:nth-child(2):before {
+  content: "#2";
+  background: #1ad9d9;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres .genre:nth-child(3) .name {
+  background: #17c1c1 !important;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres .genre:nth-child(3) .amount {
+  color: #17c1c1 !important;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres .genre:nth-child(3):before {
+  content: "#3";
+  background: #17c1c1;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres .genre:nth-child(4) .name {
+  background: #14a9a9 !important;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres .genre:nth-child(4) .amount {
+  color: #14a9a9 !important;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres .genre:nth-child(4):before {
+  content: "#4";
+  background: #14a9a9;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres .genre:nth-child(5) .name {
+  background: #119191 !important;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres .genre:nth-child(5) .amount {
+  color: #119191 !important;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .genres .genre:nth-child(5):before {
+  content: "#5";
+  background: #119191;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .percentage-bar:nth-child(1) {
+  background: #1df1f1 !important;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .percentage-bar:nth-child(2) {
+  background: #1ad9d9 !important;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .percentage-bar:nth-child(3) {
+  background: #17c1c1 !important;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .percentage-bar:nth-child(4) {
+  background: #14a9a9 !important;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .percentage-bar:nth-child(5) {
+  background: #119191 !important;
+}
+.page-content > .user .content .overview .section .desktop .genre-overview .percentage-bar:nth-child(6) {
+  background: #0f7979 !important;
+}
 
 .tooltip {
   color: #ffffff;

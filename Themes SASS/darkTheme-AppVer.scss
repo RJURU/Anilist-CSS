@@ -302,6 +302,122 @@ body {
 								}
 							}
 						}
+						.genre-overview {
+							background: $secondary;
+							.genres {
+								display: flex;
+								flex-direction: column;
+								gap: 10px;
+								.genre {
+									display: flex !important;
+									flex-direction: row;
+									gap: 10px;
+									font-weight: 800;
+									.name {
+										padding: 10px;
+										font-size: 1.5rem;
+										margin-bottom: 0px;
+										width: 60;
+									}
+									.amount {
+										background: $background;
+										padding: 10px;
+										width: 40%;
+										border-radius: 4px;
+										font-size: 1.5rem;
+										.label {
+											color: $text;
+										}
+									}
+									&::before {
+										display: block;
+										font-size: 1.5rem;
+										padding: 10px;
+										border-radius: 4px;
+									}
+									&:nth-child(1) {
+										.name {
+											background: $accent !important;
+										}
+										.amount {
+											color: $accent !important;
+										}
+										&:before {
+											content: "#1";
+											background: $accent;
+										}
+									}
+									&:nth-child(2) {
+										.name {
+											background: $accent10 !important;
+										}
+										.amount {
+											color: $accent10 !important;
+										}
+										&:before {
+											content: "#2";
+											background: $accent10;
+										}
+									}
+									&:nth-child(3) {
+										.name {
+											background: $accent20 !important;
+										}
+										.amount {
+											color: $accent20 !important;
+										}
+										&:before {
+											content: "#3";
+											background: $accent20;
+										}
+									}
+									&:nth-child(4) {
+										.name {
+											background: $accent30 !important;
+										}
+										.amount {
+											color: $accent30 !important;
+										}
+										&:before {
+											content: "#4";
+											background: $accent30;
+										}
+									}
+									&:nth-child(5) {
+										.name {
+											background: $accent40 !important;
+										}
+										.amount {
+											color: $accent40 !important;
+										}
+										&:before {
+											content: "#5";
+											background: $accent40;
+										}
+									}
+								}
+							}
+							.percentage-bar {
+								&:nth-child(1) {
+									background: $accent !important;
+								}
+								&:nth-child(2) {
+									background: $accent10 !important;
+								}
+								&:nth-child(3) {
+									background: $accent20 !important;
+								}
+								&:nth-child(4) {
+									background: $accent30 !important;
+								}
+								&:nth-child(5) {
+									background: $accent40 !important;
+								}
+								&:nth-child(6) {
+									background: $accent50 !important;
+								}
+							}
+						}
 					}
 				}
 			}
