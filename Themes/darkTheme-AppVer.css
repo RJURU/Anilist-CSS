@@ -681,6 +681,9 @@ body {
   color: #1df1f1;
   stroke: #1df1f1;
 }
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-text .wrap .actions {
+  left: 0px;
+}
 
 .el-dropdown-menu {
   color: #ffffff;
