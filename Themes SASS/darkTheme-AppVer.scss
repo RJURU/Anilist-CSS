@@ -753,6 +753,9 @@ body {
 										time {
 											color: $text;
 											font-size: 1.25rem;
+											padding: 5px;
+											border-radius: 4px;
+											background: $secondary;
 										}
 										&:hover {
 											background: transparent;

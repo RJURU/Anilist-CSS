@@ -608,6 +608,9 @@ body {
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .time time {
   color: #ffffff;
   font-size: 1.25rem;
+  padding: 5px;
+  border-radius: 4px;
+  background: #534f54;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .time:hover {
   background: transparent;
