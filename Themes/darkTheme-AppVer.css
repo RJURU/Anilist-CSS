@@ -173,7 +173,7 @@ body {
   display: none;
 }
 .page-content .nav-wrap .nav a:hover::before {
-  background: #534f54;
+  background: #119191;
   border-radius: 5px;
 }
 .page-content .nav-wrap .nav a.router-link-active::before {
@@ -460,6 +460,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-left: 20px;
+  margin-bottom: 20px;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .section-header .el-dropdown {
   float: none;
@@ -470,6 +471,7 @@ body {
   display: flex !important;
   flex-direction: row;
   margin: 0;
+  cursor: default;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .section-header .el-dropdown .el-dropdown-menu__item {
   visibility: hidden;
@@ -512,6 +514,34 @@ body {
   -webkit-mask: url(../Icons/List.svg) no-repeat 50% 50%;
   mask: url(../Icons/List.svg) no-repeat 50% 50%;
 }
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-edit .markdown-editor {
+  background: #302d31;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-edit .markdown-editor > div {
+  color: #ffffff !important;
+  display: flex;
+  padding: 5px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-edit .markdown-editor > div:hover {
+  color: #1df1f1;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-edit .input textarea {
+  background: #302d31;
+  min-height: 45px !important;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-edit .actions .cancel {
+  color: #ffffff;
+  background: #534f54;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-edit .actions .save {
+  background: #1ad9d9;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-edit .actions .save:hover {
+  background: #1df1f1;
+}
+
 .tooltip {
   color: #ffffff;
   border-radius: 10px;
