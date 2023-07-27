@@ -836,7 +836,7 @@ body {
 							.activity-text {
 								.wrap {
 									.actions {
-										left: 0px;
+										left: 15px;
 									}
 								}
 							}
@@ -848,16 +848,17 @@ body {
 	}
 }
 
-.el-dropdown-menu {
-	color: $text;
-	background: $secondary;
-	margin-top: 12px;
+.activity-extras-dropdown {
+	color: $text !important;
+	background: $secondary !important;
+	margin-top: 12px !important;
 	.popper__arrow {
 		border-bottom-color: $secondary;
 	}
 	&__item {
-		background: $accent30;
-		color: $text;
+		&:hover {
+			background: $accent30;
+		}
 	}
 }
 

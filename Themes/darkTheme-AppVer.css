@@ -682,20 +682,19 @@ body {
   stroke: #1df1f1;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-text .wrap .actions {
-  left: 0px;
+  left: 15px;
 }
 
-.el-dropdown-menu {
-  color: #ffffff;
-  background: #534f54;
-  margin-top: 12px;
+.activity-extras-dropdown {
+  color: #ffffff !important;
+  background: #534f54 !important;
+  margin-top: 12px !important;
 }
-.el-dropdown-menu .popper__arrow {
+.activity-extras-dropdown .popper__arrow {
   border-bottom-color: #534f54;
 }
-.el-dropdown-menu__item {
+.activity-extras-dropdown__item:hover {
   background: #14a9a9;
-  color: #ffffff;
 }
 
 .tooltip {
