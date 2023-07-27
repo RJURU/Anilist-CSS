@@ -1,6 +1,5 @@
 $text: #ffffff;
 $background: #221f23;
-$primary: #195bb8;
 $secondary: #302d31;
 $secondaryHv: #534f54;
 $accent: #1df1f1;
@@ -36,9 +35,9 @@ body {
 			> .link {
 				font-size: 1.5rem;
 				color: $text;
+				border-radius: 5px;
 				&:hover {
-					background: $primary;
-					border-radius: 5px;
+					background: $accent;
 				}
 			}
 			> .browse-wrap {
@@ -46,9 +45,9 @@ body {
 				> .link {
 					font-size: 1.5rem;
 					color: $text;
+					border-radius: 5px;
 					&:hover {
-						background: $primary;
-						border-radius: 5px;
+						background: $accent;
 					}
 				}
 			}
@@ -203,12 +202,12 @@ body {
 				}
 				&.router-link-active {
 					&::before {
-						background: $primary;
+						background: $accent;
 					}
 					&:hover {
 						cursor: default;
 						&::before {
-							background: $primary;
+							background: $accent;
 						}
 					}
 				}
@@ -241,9 +240,9 @@ body {
 							bottom: -10px;
 							left: 175px;
 							.nav-btn {
-								background: $primary;
+								background: $accent;
 								&:hover {
-									background: $accent;
+									background: $accent20;
 								}
 							}
 							.dropdown {
@@ -270,6 +269,11 @@ body {
 							font-weight: 600;
 							color: $text;
 							font-family: "Poppins", sans-serif;
+							.actions {
+								> a:hover {
+									color: $accent;
+								}
+							}
 						}
 						.activity-history {
 							background: $secondary;
@@ -441,6 +445,8 @@ body {
 								}
 							}
 						}
+					}
+					.stats-wrap {
 					}
 				}
 			}

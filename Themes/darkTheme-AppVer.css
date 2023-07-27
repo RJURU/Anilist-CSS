@@ -17,10 +17,10 @@ body {
 #nav > .wrap .links > .link {
   font-size: 1.5rem;
   color: #ffffff;
+  border-radius: 5px;
 }
 #nav > .wrap .links > .link:hover {
-  background: #195bb8;
-  border-radius: 5px;
+  background: #1df1f1;
 }
 #nav > .wrap .links > .browse-wrap {
   position: relative;
@@ -28,10 +28,10 @@ body {
 #nav > .wrap .links > .browse-wrap > .link {
   font-size: 1.5rem;
   color: #ffffff;
+  border-radius: 5px;
 }
 #nav > .wrap .links > .browse-wrap > .link:hover {
-  background: #195bb8;
-  border-radius: 5px;
+  background: #1df1f1;
 }
 #nav > .wrap .dropdown {
   top: 60px;
@@ -162,13 +162,13 @@ body {
   border-radius: 5px;
 }
 .page-content .nav-wrap .nav a.router-link-active::before {
-  background: #195bb8;
+  background: #1df1f1;
 }
 .page-content .nav-wrap .nav a.router-link-active:hover {
   cursor: default;
 }
 .page-content .nav-wrap .nav a.router-link-active:hover::before {
-  background: #195bb8;
+  background: #1df1f1;
 }
 .page-content > .user {
   display: flex;
@@ -198,10 +198,10 @@ body {
   left: 175px;
 }
 .page-content > .user .header-wrap .banner .container .banner-content .actions .nav-btn {
-  background: #195bb8;
+  background: #1df1f1;
 }
 .page-content > .user .header-wrap .banner .container .banner-content .actions .nav-btn:hover {
-  background: #1df1f1;
+  background: #17c1c1;
 }
 .page-content > .user .header-wrap .banner .container .banner-content .actions .dropdown {
   display: none;
@@ -218,6 +218,9 @@ body {
   font-weight: 600;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
+}
+.page-content > .user .content .overview .section .desktop .section-header .actions > a:hover {
+  color: #1df1f1;
 }
 .page-content > .user .content .overview .section .desktop .activity-history {
   background: #302d31;
@@ -368,7 +371,6 @@ body {
   z-index: 5;
   transition: opacity 250ms ease-in-out, outline 500ms ease-in-out, transform 350ms ease-in 500ms;
 }
-
 .tooltip {
   color: #ffffff;
   border-radius: 10px;
