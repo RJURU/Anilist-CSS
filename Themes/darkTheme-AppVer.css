@@ -572,20 +572,43 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .time:hover {
-  background: transparent;
-}
-.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .time time {
-  color: #ffffff;
-  font-size: 1.25rem;
-  transform: translate(0px, 2px);
+  height: 30px;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .time .action {
   height: 26px;
   width: 26px;
   background: #534f54;
   border-radius: 4px;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color: #ffffff;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .time .action.active {
+  color: #1df1f1;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .time .action:hover {
+  color: #1df1f1;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .time .action::before {
+  left: 50%;
+  top: -30px;
+  transform: translate(-50%);
+  background: #534f54;
+  color: #ffffff;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .time > span svg {
+  height: 26px;
+  width: 26px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .time time {
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .time:hover {
+  background: transparent;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions {
   right: unset;
@@ -598,6 +621,10 @@ body {
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action {
   position: relative;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action .count,
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action .button .count {
@@ -648,6 +675,19 @@ body {
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action:hover svg {
   color: #1df1f1;
   stroke: #1df1f1;
+}
+
+.el-dropdown-menu {
+  color: #ffffff;
+  background: #534f54;
+  margin-top: 12px;
+}
+.el-dropdown-menu .popper__arrow {
+  border-bottom-color: #534f54;
+}
+.el-dropdown-menu__item {
+  background: #14a9a9;
+  color: #ffffff;
 }
 
 .tooltip {
