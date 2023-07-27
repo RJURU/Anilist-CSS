@@ -684,6 +684,85 @@ body {
 								}
 							}
 						}
+						.activity-feed {
+							.activity-entry {
+								.wrap {
+									background: $primary;
+									.list {
+										min-height: 100px;
+										grid-template-columns: 70px auto;
+										.details {
+											padding: 16px 16px 30px;
+											padding-right: 16px;
+											.status {
+												padding: 10px;
+												.title {
+													color: $accent !important;
+												}
+											}
+											.entry-dropdown {
+												left: 75px;
+												top: 5px;
+												opacity: 1;
+												background: $secondary;
+												border-radius: 4px;
+											}
+										}
+									}
+									.time {
+										top: unset;
+										right: 15px;
+										bottom: 7px;
+									}
+									.actions {
+										right: unset;
+										left: 80px;
+										bottom: 0px;
+										color: $text;
+										stroke: $text;
+										display: flex;
+										flex-direction: row;
+										gap: 10px;
+										.action {
+											display: flex;
+											flex-direction: row;
+											gap: 5px;
+											align-items: center;
+											.count {
+												color: $text !important;
+											}
+											svg {
+												padding: 5px;
+												height: 20px;
+												width: 20px;
+												border-radius: 4px;
+											}
+											&:hover {
+												.count {
+													color: $accent !important;
+												}
+												svg {
+													background: $secondary;
+													color: $accent;
+													stroke: $accent;
+												}
+											}
+											.like-wrap {
+												.users {
+													display: none !important;
+												}
+												.button {
+													display: flex;
+													flex-direction: row;
+													gap: 5px;
+													align-items: center;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
 					}
 				}
 			}

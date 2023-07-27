@@ -541,6 +541,77 @@ body {
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-edit .actions .save:hover {
   background: #1df1f1;
 }
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap {
+  background: #302d31;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .list {
+  min-height: 100px;
+  grid-template-columns: 70px auto;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .list .details {
+  padding: 16px 16px 30px;
+  padding-right: 16px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .list .details .status {
+  padding: 10px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .list .details .status .title {
+  color: #1df1f1 !important;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .list .details .entry-dropdown {
+  left: 75px;
+  top: 5px;
+  opacity: 1;
+  background: #534f54;
+  border-radius: 4px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .time {
+  top: unset;
+  right: 15px;
+  bottom: 7px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions {
+  right: unset;
+  left: 80px;
+  bottom: 0px;
+  color: #ffffff;
+  stroke: #ffffff;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action .count {
+  color: #ffffff !important;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action svg {
+  padding: 5px;
+  height: 20px;
+  width: 20px;
+  border-radius: 4px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action:hover .count {
+  color: #1df1f1 !important;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action:hover svg {
+  background: #534f54;
+  color: #1df1f1;
+  stroke: #1df1f1;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action .like-wrap .users {
+  display: none !important;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action .like-wrap .button {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
 
 .tooltip {
   color: #ffffff;
