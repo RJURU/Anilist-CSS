@@ -575,7 +575,7 @@ body {
   left: 80px;
   bottom: 0px;
   color: #ffffff;
-  stroke: #ffffff;
+  stroke: #ffffff !important;
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -595,14 +595,6 @@ body {
   width: 22px;
   border-radius: 4px;
 }
-.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action:hover .count {
-  color: #1df1f1 !important;
-}
-.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action:hover svg {
-  background: #534f54;
-  color: #1df1f1;
-  stroke: #1df1f1;
-}
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action .like-wrap .users {
   display: none !important;
 }
@@ -611,6 +603,14 @@ body {
   flex-direction: row;
   gap: 5px;
   align-items: center;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action:hover .count {
+  color: #1df1f1 !important;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action:hover svg {
+  background: #534f54;
+  color: #1df1f1;
+  stroke: #1df1f1 !important;
 }
 
 .tooltip {

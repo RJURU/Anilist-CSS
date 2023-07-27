@@ -719,7 +719,7 @@ body {
 										left: 80px;
 										bottom: 0px;
 										color: $text;
-										stroke: $text;
+										stroke: $text !important;
 										display: flex;
 										flex-direction: row;
 										gap: 10px;
@@ -737,16 +737,6 @@ body {
 												width: 22px;
 												border-radius: 4px;
 											}
-											&:hover {
-												.count {
-													color: $accent !important;
-												}
-												svg {
-													background: $secondary;
-													color: $accent;
-													stroke: $accent;
-												}
-											}
 											.like-wrap {
 												.users {
 													display: none !important;
@@ -756,6 +746,16 @@ body {
 													flex-direction: row;
 													gap: 5px;
 													align-items: center;
+												}
+											}
+											&:hover {
+												.count {
+													color: $accent !important;
+												}
+												svg {
+													background: $secondary;
+													color: $accent;
+													stroke: $accent !important;
 												}
 											}
 										}
