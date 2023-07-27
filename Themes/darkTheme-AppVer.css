@@ -573,27 +573,29 @@ body {
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions {
   right: unset;
   left: 80px;
-  bottom: 0px;
+  bottom: 2px;
   color: #ffffff;
-  stroke: #ffffff !important;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
 }
-.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  align-items: center;
-}
-.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action .count {
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action .count,
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action .button .count {
   color: #ffffff !important;
+  font-size: 1.6rem;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  background: #534f54;
+  padding: 5px;
+  border-radius: 4px;
+  display: none;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action svg {
   padding: 5px;
-  height: 22px;
-  width: 22px;
+  height: 26px;
+  width: 26px;
   border-radius: 4px;
+  stroke: #ffffff;
+  background: #534f54;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action .like-wrap .users {
   display: none !important;
@@ -604,13 +606,14 @@ body {
   gap: 5px;
   align-items: center;
 }
-.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action:hover .count {
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action:hover .count,
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action:hover .button .count {
   color: #1df1f1 !important;
+  display: block;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action:hover svg {
-  background: #534f54;
   color: #1df1f1;
-  stroke: #1df1f1 !important;
+  stroke: #1df1f1;
 }
 
 .tooltip {
