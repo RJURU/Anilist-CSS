@@ -335,22 +335,22 @@ body {
   content: "#5";
   background: #119191;
 }
-.page-content > .user .content .overview .section .desktop .genre-overview .percentage-bar:nth-child(1) {
+.page-content > .user .content .overview .section .desktop .genre-overview .percentage-bar .percentage:nth-child(1) {
   background: #1df1f1 !important;
 }
-.page-content > .user .content .overview .section .desktop .genre-overview .percentage-bar:nth-child(2) {
+.page-content > .user .content .overview .section .desktop .genre-overview .percentage-bar .percentage:nth-child(2) {
   background: #1ad9d9 !important;
 }
-.page-content > .user .content .overview .section .desktop .genre-overview .percentage-bar:nth-child(3) {
+.page-content > .user .content .overview .section .desktop .genre-overview .percentage-bar .percentage:nth-child(3) {
   background: #17c1c1 !important;
 }
-.page-content > .user .content .overview .section .desktop .genre-overview .percentage-bar:nth-child(4) {
+.page-content > .user .content .overview .section .desktop .genre-overview .percentage-bar .percentage:nth-child(4) {
   background: #14a9a9 !important;
 }
-.page-content > .user .content .overview .section .desktop .genre-overview .percentage-bar:nth-child(5) {
+.page-content > .user .content .overview .section .desktop .genre-overview .percentage-bar .percentage:nth-child(5) {
   background: #119191 !important;
 }
-.page-content > .user .content .overview .section .desktop .genre-overview .percentage-bar:nth-child(6) {
+.page-content > .user .content .overview .section .desktop .genre-overview .percentage-bar .percentage:nth-child(6) {
   background: #0f7979 !important;
 }
 

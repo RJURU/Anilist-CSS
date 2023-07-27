@@ -398,23 +398,25 @@ body {
 								}
 							}
 							.percentage-bar {
-								&:nth-child(1) {
-									background: $accent !important;
-								}
-								&:nth-child(2) {
-									background: $accent10 !important;
-								}
-								&:nth-child(3) {
-									background: $accent20 !important;
-								}
-								&:nth-child(4) {
-									background: $accent30 !important;
-								}
-								&:nth-child(5) {
-									background: $accent40 !important;
-								}
-								&:nth-child(6) {
-									background: $accent50 !important;
+								.percentage {
+									&:nth-child(1) {
+										background: $accent !important;
+									}
+									&:nth-child(2) {
+										background: $accent10 !important;
+									}
+									&:nth-child(3) {
+										background: $accent20 !important;
+									}
+									&:nth-child(4) {
+										background: $accent30 !important;
+									}
+									&:nth-child(5) {
+										background: $accent40 !important;
+									}
+									&:nth-child(6) {
+										background: $accent50 !important;
+									}
 								}
 							}
 						}
