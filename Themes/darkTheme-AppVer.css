@@ -116,7 +116,7 @@ body {
 .page-content .nav-wrap .nav {
   padding: 0;
   min-width: 100%;
-  height: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -124,6 +124,7 @@ body {
 .page-content .nav-wrap .nav a {
   visibility: hidden;
   position: relative;
+  height: 100%;
 }
 .page-content .nav-wrap .nav a:before {
   visibility: visible;
@@ -132,6 +133,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  border-radius: 5px;
 }
 .page-content .nav-wrap .nav a:nth-child(1)::before {
   content: url(../Icons/Home.svg);
@@ -371,6 +373,68 @@ body {
   z-index: 5;
   transition: opacity 250ms ease-in-out, outline 500ms ease-in-out, transform 350ms ease-in 500ms;
 }
+.page-content > .user .content .overview .section .stats-wrap {
+  gap: 20px;
+}
+.page-content > .user .content .overview .section .stats-wrap .content-wrap {
+  background: #302d31;
+}
+.page-content > .user .content .overview .section .stats-wrap .content-wrap .stats-wrap {
+  gap: 10px;
+}
+.page-content > .user .content .overview .section .stats-wrap .content-wrap .stats-wrap .stat {
+  padding: 10px;
+  border-radius: 5px;
+  background: #534f54;
+}
+.page-content > .user .content .overview .section .stats-wrap .content-wrap .stats-wrap .stat .value {
+  color: #1df1f1;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.page-content > .user .content .overview .section .stats-wrap .content-wrap .stats-wrap .stat .label {
+  color: #ffffff;
+  font-size: 1.2rem;
+  visibility: hidden;
+  position: relative;
+}
+.page-content > .user .content .overview .section .stats-wrap .content-wrap .stats-wrap .stat .label::after {
+  visibility: visible;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.page-content > .user .content .overview .section .stats-wrap .content-wrap:nth-child(1) .stats-wrap .stat:nth-child(1) .label::after {
+  content: "Anime";
+}
+.page-content > .user .content .overview .section .stats-wrap .content-wrap:nth-child(1) .stats-wrap .stat:nth-child(2) .label::after {
+  content: "Days";
+}
+.page-content > .user .content .overview .section .stats-wrap .content-wrap:nth-child(1) .stats-wrap .stat:nth-child(3) .label::after {
+  content: "Episodes";
+}
+.page-content > .user .content .overview .section .stats-wrap .content-wrap:nth-child(2) .stats-wrap .stat:nth-child(1) .label::after {
+  content: "Manga";
+}
+.page-content > .user .content .overview .section .stats-wrap .content-wrap:nth-child(2) .stats-wrap .stat:nth-child(2) .label::after {
+  content: "Chapters";
+}
+.page-content > .user .content .overview .section .stats-wrap .content-wrap:nth-child(2) .stats-wrap .stat:nth-child(3) .label::after {
+  content: "Volumes";
+}
+.page-content > .user .content .overview .section .stats-wrap .content-wrap .footer {
+  background: #302d31;
+}
+.page-content > .user .content .overview .section .stats-wrap .content-wrap .footer .milestones .milestone {
+  font-weight: 800;
+}
+.page-content > .user .content .overview .section .stats-wrap .content-wrap .footer .progress {
+  background: #534f54;
+}
+.page-content > .user .content .overview .section .stats-wrap .content-wrap .footer .progress .bar {
+  background: linear-gradient(270deg, #1df1f1, #119191);
+}
+
 .tooltip {
   color: #ffffff;
   border-radius: 10px;
