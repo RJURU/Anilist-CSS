@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap");
 body {
   background: #221f23;
   color: #ffffff;
@@ -709,8 +710,9 @@ body {
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .name {
   color: #ffffff;
-  font-size: 1.6rem;
+  font-size: 2rem;
   transition: color 250ms ease-out;
+  font-family: "Monomaniac One", sans-serif;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .donator-badge {
   background: #1ad9d9;
@@ -940,8 +942,9 @@ body {
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-text .wrap .text .header .name,
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-message .wrap .text .header .name {
   color: #ffffff;
-  font-size: 1.6rem;
+  font-size: 2rem;
   transition: color 250ms ease-out;
+  font-family: "Monomaniac One", sans-serif;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-text .wrap .text .header .donator-badge,
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-message .wrap .text .header .donator-badge {
