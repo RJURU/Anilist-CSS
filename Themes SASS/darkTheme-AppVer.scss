@@ -583,12 +583,15 @@ body {
 							.el-dropdown {
 								float: none;
 								.el-dropdown-menu {
-									padding: 0;
+									padding: 0 !important;
 									height: 100%;
 									display: flex !important;
-									flex-direction: row;
+									flex-direction: row !important;
 									margin: 0;
 									cursor: default;
+									transform: translate(0);
+									margin-top: 0px !important;
+									background: transparent !important;
 									&__item {
 										visibility: hidden;
 										position: relative;
@@ -873,6 +876,12 @@ body {
 		border-radius: 4px !important;
 		&:not(.is-disabled):hover {
 			background: $accent30 !important;
+		}
+		&-divided {
+			border-top: none !important;
+			&:before {
+				background: $primary !important;
+			}
 		}
 	}
 }

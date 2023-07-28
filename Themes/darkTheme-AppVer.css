@@ -466,12 +466,15 @@ body {
   float: none;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .section-header .el-dropdown .el-dropdown-menu {
-  padding: 0;
+  padding: 0 !important;
   height: 100%;
   display: flex !important;
-  flex-direction: row;
+  flex-direction: row !important;
   margin: 0;
   cursor: default;
+  transform: translate(0);
+  margin-top: 0px !important;
+  background: transparent !important;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .section-header .el-dropdown .el-dropdown-menu__item {
   visibility: hidden;
@@ -714,6 +717,12 @@ body {
 }
 .el-dropdown-menu__item:not(.is-disabled):hover {
   background: #14a9a9 !important;
+}
+.el-dropdown-menu__item-divided {
+  border-top: none !important;
+}
+.el-dropdown-menu__item-divided:before {
+  background: #302d31 !important;
 }
 
 .tooltip {
