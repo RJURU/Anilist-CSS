@@ -736,22 +736,10 @@ body {
   border-radius: 4px;
   background: #534f54;
 }
-.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time > .action {
-  opacity: 1;
-  min-width: 26px;
-  width: 26px;
-  height: 26px;
-  border-radius: 4px;
-  background: #534f54;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time > .actiondiv {
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time div {
   visibility: hidden;
 }
-.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time > .actiondiv::after {
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time div::after {
   content: "";
   visibility: visible;
   position: absolute;
@@ -768,7 +756,8 @@ body {
   -webkit-mask: url(../Icons/Edit.svg) no-repeat 50% 50%;
   mask: url(../Icons/Edit.svg) no-repeat 50% 50%;
 }
-.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time > .actiondiv::before, .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time > .actionspan::before {
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time div::before,
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time span::before {
   content: "";
   visibility: visible;
   border-radius: 4px;
@@ -779,6 +768,18 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time > .action {
+  opacity: 1;
+  min-width: 26px;
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  background: #534f54;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time > .action > svg {
   stroke: #ffffff;
