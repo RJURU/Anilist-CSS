@@ -793,6 +793,9 @@ body {
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time > .action:hover:nth-child(1)::after {
   background: #1df1f1;
 }
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .likes .like-wrap .users {
+  display: none !important;
+}
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .likes .like-wrap .button {
   background: #534f54;
   height: 26px;
@@ -803,9 +806,6 @@ body {
   align-items: center;
   position: relative;
 }
-.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .likes .like-wrap .button .user {
-  display: none !important;
-}
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .likes .like-wrap .button .count {
   display: none;
   position: absolute;
@@ -815,11 +815,15 @@ body {
   background: #534f54;
   padding: 5px;
   border-radius: 4px;
+  color: #1df1f1;
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .likes .like-wrap .button > svg {
   transform: scale(1.5);
   color: #ffffff;
   stroke: #ffffff;
+  width: 26px;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .likes .like-wrap .button:hover > svg, .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .likes .like-wrap .button.liked > svg {
   color: #1df1f1;
@@ -1088,6 +1092,41 @@ body {
 }
 .el-dropdown-menu__item-divided:before {
   background: #302d31 !important;
+}
+
+.el-dialog .el-dialog__body {
+  background: #221f23 !important;
+}
+
+.el-message-box {
+  background: #221f23 !important;
+}
+.el-message-box .el-message-box__header .el-message-box__title {
+  color: #ffffff !important;
+}
+.el-message-box .el-message-box__header .el-message-box__headerbtn .el-message-box__close {
+  color: #ffffff !important;
+}
+.el-message-box .el-message-box__message {
+  color: #ffffff !important;
+}
+.el-message-box .el-message-box__message .el-message-box__input .el-input .el-input__inner {
+  background: #302d31 !important;
+  color: #ffffff !important;
+}
+.el-message-box .el-message-box__btns .el-button--default {
+  background: #534f54 !important;
+  color: #ffffff !important;
+}
+.el-message-box .el-message-box__btns .el-button--default:hover {
+  background: #302d31 !important;
+}
+.el-message-box .el-message-box__btns .el-button--primary {
+  background: #1ad9d9 !important;
+  color: #ffffff !important;
+}
+.el-message-box .el-message-box__btns .el-button--primary:hover {
+  background: #17c1c1 !important;
 }
 
 .tooltip {
