@@ -5,6 +5,16 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+*::-webkit-scrollbar {
+  width: 5px;
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #1df1f1;
+  -webkit-border-radius: 16px;
+}
+
 #nav {
   margin-left: 150px;
   width: calc(100% - 200px);
@@ -800,7 +810,7 @@ body {
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-text .wrap .time,
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-message .wrap .time {
-  left: 15px;
+  left: 15px !important;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-text:hover .wrap .header .avatar,
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-message:hover .wrap .header .avatar {
@@ -920,7 +930,4 @@ body {
   .container {
     max-width: 100%;
   }
-}
-::-webkit-scrollbar-thumb {
-  background-color: #1df1f1;
 }/*# sourceMappingURL=darkTheme-AppVer.css.map */
