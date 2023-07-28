@@ -793,6 +793,41 @@ body {
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time > .action:hover:nth-child(1)::after {
   background: #1df1f1;
 }
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .likes .like-wrap .button {
+  background: #534f54;
+  height: 26px;
+  width: 26px;
+  border-radius: 4px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  position: relative;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .likes .like-wrap .button .user {
+  display: none !important;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .likes .like-wrap .button .count {
+  display: none;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translate(-50%);
+  background: #534f54;
+  padding: 5px;
+  border-radius: 4px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .likes .like-wrap .button > svg {
+  transform: scale(1.5);
+  color: #ffffff;
+  stroke: #ffffff;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .likes .like-wrap .button:hover > svg, .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .likes .like-wrap .button.liked > svg {
+  color: #1df1f1;
+  stroke: #1df1f1;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .likes .like-wrap .button:hover .count {
+  display: block;
+}
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown:before {
   content: "";
   background: radial-gradient(circle, #ffffff 0%, #ffffff 0%, transparent 100%);
