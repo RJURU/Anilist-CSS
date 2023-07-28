@@ -716,6 +716,24 @@ body {
   background: #1ad9d9;
   color: #ffffff;
 }
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions {
+  right: 15px;
+  bottom: 4px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time time {
+  color: #ffffff;
+  font-size: 1.25rem;
+  padding: 5px;
+  border-radius: 4px;
+  background: #534f54;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time .action {
+  opacity: 1;
+}
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown:before, .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown::after {
   content: "";
   background: radial-gradient(circle, #ffffff 0%, #ffffff 0%, transparent 100%);
