@@ -549,7 +549,7 @@ body {
   grid-template-columns: 70px auto;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .list .details {
-  padding: 16px 16px 30px;
+  padding: 16px 16px 40px;
   padding-right: 16px;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .list .details .status {
@@ -566,11 +566,13 @@ body {
   border-radius: 4px;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .time {
+  width: fit-content;
   top: unset;
   right: 15px;
-  bottom: 2px;
+  left: 85px;
+  bottom: 4px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   height: 30px;
   gap: 5px;
@@ -616,9 +618,8 @@ body {
   background: transparent;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions {
-  right: unset;
-  left: 80px;
-  bottom: 2px;
+  right: 15px;
+  bottom: 4px;
   color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -681,19 +682,38 @@ body {
   color: #1df1f1;
   stroke: #1df1f1;
 }
-.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-text .wrap .actions {
-  left: 10px;
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-text .wrap {
+  background: #302d31;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-text .wrap .text {
+  padding-bottom: 40px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-text .wrap .time {
+  left: 15px;
 }
 
 .activity-extras-dropdown {
-  color: #ffffff !important;
   background: #534f54 !important;
   margin-top: 12px !important;
+  padding: 5px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 5px !important;
+  transform: translate(57px);
 }
 .activity-extras-dropdown .popper__arrow {
   border-bottom-color: #534f54 !important;
+  left: 50% !important;
+  transform: translate(-50%);
 }
-.activity-extras-dropdown__item:hover {
+.activity-extras-dropdown .popper__arrow::after {
+  border-bottom-color: #534f54 !important;
+}
+.activity-extras-dropdown__item {
+  color: #ffffff !important;
+  border-radius: 4px !important;
+}
+.activity-extras-dropdown__item:not(.is-disabled):hover {
   background: #14a9a9 !important;
 }
 

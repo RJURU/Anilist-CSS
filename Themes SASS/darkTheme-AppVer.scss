@@ -692,7 +692,7 @@ body {
 										min-height: 100px;
 										grid-template-columns: 70px auto;
 										.details {
-											padding: 16px 16px 30px;
+											padding: 16px 16px 40px;
 											padding-right: 16px;
 											.status {
 												padding: 10px;
@@ -710,11 +710,13 @@ body {
 										}
 									}
 									.time {
+										width: fit-content;
 										top: unset;
 										right: 15px;
-										bottom: 2px;
+										left: 85px;
+										bottom: 4px;
 										display: flex;
-										flex-direction: row;
+										flex-direction: row-reverse;
 										align-items: center;
 										height: 30px;
 										gap: 5px;
@@ -762,9 +764,8 @@ body {
 										}
 									}
 									.actions {
-										right: unset;
-										left: 80px;
-										bottom: 2px;
+										right: 15px;
+										bottom: 4px;
 										color: $text;
 										display: flex;
 										flex-direction: row;
@@ -835,8 +836,12 @@ body {
 							}
 							.activity-text {
 								.wrap {
-									.actions {
-										left: 10px;
+									background: $primary;
+									.text {
+										padding-bottom: 40px;
+									}
+									.time {
+										left: 15px;
 									}
 								}
 							}
@@ -849,14 +854,25 @@ body {
 }
 
 .activity-extras-dropdown {
-	color: $text !important;
 	background: $secondary !important;
 	margin-top: 12px !important;
+	padding: 5px !important;
+	display: flex !important;
+	flex-direction: column !important;
+	gap: 5px !important;
+	transform: translate(57px);
 	.popper__arrow {
 		border-bottom-color: $secondary !important;
+		left: 50% !important;
+		transform: translate(-50%);
+		&::after {
+			border-bottom-color: $secondary !important;
+		}
 	}
 	&__item {
-		&:hover {
+		color: $text !important;
+		border-radius: 4px !important;
+		&:not(.is-disabled):hover {
 			background: $accent30 !important;
 		}
 	}
