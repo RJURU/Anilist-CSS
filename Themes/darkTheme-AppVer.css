@@ -736,7 +736,7 @@ body {
   border-radius: 4px;
   background: #534f54;
 }
-.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time .action {
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time > .action {
   opacity: 1;
   min-width: 26px;
   width: 26px;
@@ -748,10 +748,10 @@ body {
   align-items: center;
   position: relative;
 }
-.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time .action:first-of-type {
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time > .actiondiv {
   visibility: hidden;
 }
-.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time .action:first-of-type::after {
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time > .actiondiv::after {
   content: "";
   visibility: visible;
   position: absolute;
@@ -768,16 +768,28 @@ body {
   -webkit-mask: url(../Icons/Edit.svg) no-repeat 50% 50%;
   mask: url(../Icons/Edit.svg) no-repeat 50% 50%;
 }
-.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time .action > svg {
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time > .actiondiv::before, .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time > .actionspan::before {
+  content: "";
+  visibility: visible;
+  border-radius: 4px;
+  background: #534f54;
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time > .action > svg {
   stroke: #ffffff;
   color: #ffffff;
   transform: scale(1.3);
 }
-.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time .action:hover > svg {
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time > .action:hover > svg {
   stroke: #1df1f1;
   color: #1df1f1;
 }
-.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time .action:hover:first-of-type::after {
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .actions .time > .action:hover:nth-child(1)::after {
   background: #1df1f1;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown:before {
