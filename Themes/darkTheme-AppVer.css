@@ -16,6 +16,10 @@ body {
   -webkit-border-radius: 16px;
 }
 
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 #nav {
   margin-left: 150px;
   width: calc(100% - 200px);
