@@ -664,6 +664,7 @@ body {
   width: 26px;
   border-radius: 4px;
   stroke: #ffffff;
+  color: #ffffff;
   background: #534f54;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .actions .action svg:hover {
@@ -695,6 +696,113 @@ body {
   color: #1df1f1;
   stroke: #1df1f1;
 }
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply {
+  background: #302d31;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header {
+  padding: 0px 0px 10px 0px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .avatar {
+  outline: 3px solid transparent;
+  border-radius: 50%;
+  transition: color 250ms ease-out;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .name {
+  color: #ffffff;
+  font-size: 1.6rem;
+  transition: color 250ms ease-out;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .donator-badge {
+  background: #1ad9d9;
+  color: #ffffff;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown:before, .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown::after {
+  content: "";
+  background: radial-gradient(circle, #ffffff 0%, #ffffff 0%, transparent 100%);
+  height: 2px;
+  width: 100%;
+  display: block;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 14px 0px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown .markdown-spoiler:before {
+  background: #1ad9d9;
+  color: #ffffff;
+  padding: 5px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown .markdown-spoiler .hide-spoiler {
+  color: white;
+  opacity: 1;
+  top: -5px;
+  right: -5px;
+  transform: scale(1.1);
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown .markdown-spoiler .hide-spoiler:hover {
+  color: #1df1f1;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown .markdown-spoiler > span {
+  background: #534f54;
+  padding: 10px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown blockquote {
+  background: #534f54;
+  border-left: 7px solid #ffffff;
+  transition: border-left 200ms ease-out;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown blockquote:hover {
+  border-left: 7px solid #1df1f1;
+  transition: border-left 200ms ease-in;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown a {
+  color: #1df1f1;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown a:visited {
+  color: #17c1c1;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown a .embed {
+  background: #534f54;
+  padding: 5px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown a .embed .cover {
+  border-radius: 3px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown a .embed .wrap {
+  background: #534f54;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown a .embed .wrap .title {
+  color: #1df1f1;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown a .embed .wrap .info {
+  color: #ffffff;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown h1,
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown h2 {
+  color: #ffffff;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown::-webkit-scrollbar {
+  width: 5px;
+  background: transparent;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown::-webkit-scrollbar-thumb {
+  background-color: #1df1f1;
+  -webkit-border-radius: 16px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply:hover .header .avatar {
+  outline: 3px solid #1df1f1;
+  transition: outline 250ms ease-in;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply:hover .header .name {
+  color: #1df1f1;
+  transition: color 250ms ease-in;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply:hover .reply-markdown:before, .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply:hover .reply-markdown::after {
+  content: "";
+  background: radial-gradient(circle, #1df1f1 0%, #1df1f1 53%, transparent 100%);
+  height: 2px;
+}
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-text .wrap,
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-message .wrap {
   background: #302d31;
@@ -705,7 +813,7 @@ body {
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-text .wrap .text .header,
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-message .wrap .text .header {
-  padding: 6px 0px;
+  padding: 0px 0px 10px 0px;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-text .wrap .text .header .avatar,
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-message .wrap .text .header .avatar {
@@ -807,6 +915,16 @@ body {
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-message .wrap .text .activity-markdown .markdown h1,
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-message .wrap .text .activity-markdown .markdown h2 {
   color: #ffffff;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-text .wrap .text .activity-markdown .markdown::-webkit-scrollbar,
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-message .wrap .text .activity-markdown .markdown::-webkit-scrollbar {
+  width: 5px;
+  background: transparent;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-text .wrap .text .activity-markdown .markdown::-webkit-scrollbar-thumb,
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-message .wrap .text .activity-markdown .markdown::-webkit-scrollbar-thumb {
+  background-color: #1df1f1;
+  -webkit-border-radius: 16px;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-text .wrap .time,
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-message .wrap .time {
