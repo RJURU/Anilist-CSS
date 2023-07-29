@@ -401,6 +401,23 @@ body {
   z-index: 5;
   transition: opacity 250ms ease-in-out, outline 500ms ease-in-out, transform 350ms ease-in 500ms;
 }
+.page-content > .user .content .overview .section .desktop.favourites > .favourites-wrap.studios {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.page-content > .user .content .overview .section .desktop.favourites > .favourites-wrap.studios .studio {
+  min-height: fit-content;
+  padding: 10px !important;
+  background: #302d31 !important;
+}
+.page-content > .user .content .overview .section .desktop.favourites > .favourites-wrap.studios .studio::after {
+  display: none;
+}
+.page-content > .user .content .overview .section .desktop.favourites > .favourites-wrap.studios .studio:hover {
+  opacity: 1;
+  color: #1df1f1;
+}
 .page-content > .user .content .overview .section .stats-wrap {
   gap: 20px;
 }
@@ -569,6 +586,7 @@ body {
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .list .details {
   padding: 16px 16px 40px;
   padding-right: 16px;
+  position: relative;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .list .details .status {
   padding: 10px;
@@ -577,7 +595,7 @@ body {
   color: #1df1f1 !important;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .wrap .list .details .entry-dropdown {
-  left: 90px;
+  left: 5px;
   top: 5px;
   opacity: 1;
   background: #534f54;
@@ -710,12 +728,12 @@ body {
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .avatar {
   outline: 3px solid transparent;
   border-radius: 50%;
-  transition: color 250ms ease-out;
+  transition: color 200ms ease-out;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .name {
   color: #ffffff;
   font-size: 2rem;
-  transition: color 250ms ease-out;
+  transition: color 200ms ease-out;
   font-family: "Monomaniac One", sans-serif;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .header .donator-badge {
@@ -909,21 +927,25 @@ body {
   background: transparent;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown::-webkit-scrollbar-thumb {
-  background-color: #1df1f1;
+  background-color: transparent;
   -webkit-border-radius: 16px;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply:hover .header .avatar {
   outline: 3px solid #1df1f1;
-  transition: outline 250ms ease-in;
+  transition: outline 200ms ease-in;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply:hover .header .name {
   color: #1df1f1;
-  transition: color 250ms ease-in;
+  transition: color 200ms ease-in;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply:hover .reply-markdown:before {
   content: "";
   background: radial-gradient(circle, #1df1f1 0%, #1df1f1 53%, transparent 100%);
   height: 2px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply:hover .reply-markdown .markdown::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  -webkit-border-radius: 16px;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-text .wrap,
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-message .wrap {
@@ -941,13 +963,13 @@ body {
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-message .wrap .text .header .avatar {
   outline: 3px solid transparent;
   border-radius: 50%;
-  transition: color 250ms ease-out;
+  transition: color 200ms ease-out;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-text .wrap .text .header .name,
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-message .wrap .text .header .name {
   color: #ffffff;
   font-size: 2rem;
-  transition: color 250ms ease-out;
+  transition: color 200ms ease-out;
   font-family: "Monomaniac One", sans-serif;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-text .wrap .text .header .donator-badge,
@@ -1046,8 +1068,9 @@ body {
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-text .wrap .text .activity-markdown .markdown::-webkit-scrollbar-thumb,
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-message .wrap .text .activity-markdown .markdown::-webkit-scrollbar-thumb {
-  background-color: #1df1f1;
+  background-color: transparent;
   -webkit-border-radius: 16px;
+  opacity: 0;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-text .wrap .time,
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-message .wrap .time {
@@ -1056,12 +1079,12 @@ body {
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-text:hover .wrap .header .avatar,
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-message:hover .wrap .header .avatar {
   outline: 3px solid #1df1f1;
-  transition: outline 250ms ease-in;
+  transition: outline 200ms ease-in;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-text:hover .wrap .header .name,
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-message:hover .wrap .header .name {
   color: #1df1f1;
-  transition: color 250ms ease-in;
+  transition: color 200ms ease-in;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-text:hover .wrap .activity-markdown:before, .page-content > .user .content .overview .section .activity-feed-wrap .activity-text:hover .wrap .activity-markdown::after,
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-message:hover .wrap .activity-markdown:before,
@@ -1070,6 +1093,11 @@ body {
   background: radial-gradient(circle, #1df1f1 0%, #1df1f1 53%, transparent 100%);
   height: 2px;
 }
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-text:hover .wrap .activity-markdown .markdown::-webkit-scrollbar-thumb,
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-message:hover .wrap .activity-markdown .markdown::-webkit-scrollbar-thumb {
+  background-color: #1df1f1;
+  -webkit-border-radius: 16px;
+}
 
 .el-dropdown-menu {
   background: #534f54 !important;
@@ -1077,27 +1105,25 @@ body {
   padding: 5px !important;
   flex-direction: column !important;
   gap: 5px !important;
-  transform: translate(57px);
+  transform: translate(54px);
+}
+.el-dropdown-menu.activity-extras-dropdown {
+  transform: translate(62px);
 }
 .el-dropdown-menu .popper__arrow {
-  border-bottom-color: #534f54 !important;
-  left: 50% !important;
-  transform: translate(-50%);
+  display: none;
 }
-.el-dropdown-menu .popper__arrow::after {
-  border-bottom-color: #534f54 !important;
-}
-.el-dropdown-menu__item {
+.el-dropdown-menu .el-dropdown-menu__item {
   color: #ffffff !important;
   border-radius: 4px !important;
 }
-.el-dropdown-menu__item:not(.is-disabled):hover {
+.el-dropdown-menu .el-dropdown-menu__item:not(.is-disabled):hover {
   background: #14a9a9 !important;
 }
-.el-dropdown-menu__item-divided {
+.el-dropdown-menu .el-dropdown-menu__item .el-dropdown-menu__item--divided {
   border-top: none !important;
 }
-.el-dropdown-menu__item-divided:before {
+.el-dropdown-menu .el-dropdown-menu__item .el-dropdown-menu__item--divided:before {
   background: #302d31 !important;
 }
 
