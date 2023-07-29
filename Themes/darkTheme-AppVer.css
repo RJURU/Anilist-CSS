@@ -1098,6 +1098,14 @@ body {
   background-color: #1df1f1;
   -webkit-border-radius: 16px;
 }
+.page-content > .user .content .overview .section .activity-feed-wrap .scroller .load-more {
+  background: #302d31;
+  margin-top: 0px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .scroller:hover .load-more {
+  background: #534f54;
+  color: #1df1f1;
+}
 
 .el-dropdown-menu {
   background: #534f54 !important;
@@ -1219,6 +1227,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .footer[data-v-0f519cab] .container .links section {
   margin-left: 40px;
