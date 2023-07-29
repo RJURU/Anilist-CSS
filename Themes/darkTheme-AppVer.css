@@ -1106,6 +1106,51 @@ body {
   background: #534f54;
   color: #1df1f1;
 }
+.page-content > .user .content .favourites .section-header {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+.page-content > .user .content .favourites .section-header .actions > div {
+  background: #302d31;
+  color: #ffffff;
+}
+.page-content > .user .content .favourites .section-header .actions > div:hover {
+  background: #1ad9d9;
+}
+.page-content > .user .content .favourites .favourites-wrap {
+  background: #302d31;
+}
+.page-content > .user .content .favourites .favourites-wrap > a {
+  opacity: 60%;
+  transition: opacity 250ms ease-in-out, outline 200ms ease-in-out, transform 350ms ease-out;
+}
+.page-content > .user .content .favourites .favourites-wrap > a .delete {
+  color: #ffffff;
+  background: #1ad9d9;
+}
+.page-content > .user .content .favourites .favourites-wrap > a:hover {
+  opacity: 100%;
+  outline: 3px solid #1df1f1;
+  transform: scale(1.1);
+  z-index: 5;
+  transition: opacity 250ms ease-in-out, outline 500ms ease-in-out, transform 350ms ease-in 500ms;
+}
+.page-content > .user .content .favourites .favourites-wrap.studios > a {
+  padding: 10px;
+  background: #534f54;
+  color: #ffffff;
+}
+.page-content > .user .content .favourites .favourites-wrap.studios > a:hover {
+  color: #1df1f1;
+}
+.page-content > .user .content .favourites.sorting .studios .studio::after {
+  display: none !important;
+}
+.page-content > .user .content .favourites.sorting .studios .studio:hover {
+  cursor: move;
+}
 
 .el-dropdown-menu {
   background: #534f54 !important;
@@ -1238,7 +1283,7 @@ body {
   color: #1df1f1;
 }
 
-@media (min-width: 1540px) {
+@media (min-width: 1540px), (min-width: 1040px) and (max-width: 1540px) {
   .container {
     max-width: 100%;
   }
