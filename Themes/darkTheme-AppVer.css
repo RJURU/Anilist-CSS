@@ -245,9 +245,10 @@ body {
 }
 .page-content > .user .content .overview .section .desktop .section-header {
   font-size: 2rem;
+  letter-spacing: 0.2rem;
   font-weight: 600;
   color: #ffffff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Monomaniac One", sans-serif;
 }
 .page-content > .user .content .overview .section .desktop .section-header .actions > a:hover {
   color: #1df1f1;
@@ -483,7 +484,8 @@ body {
   font-size: 2rem;
   font-weight: 600;
   color: #ffffff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Monomaniac One", sans-serif;
+  letter-spacing: 0.2rem;
   padding: 1rem;
   background: #302d31;
   border-radius: 4px;
@@ -1151,6 +1153,73 @@ body {
 .page-content > .user .content .favourites.sorting .studios .studio:hover {
   cursor: move;
 }
+.page-content > .user .content .medialist .filters-wrap {
+  background: #302d31;
+  padding: 10px;
+  border-radius: 4px;
+  height: fit-content;
+}
+.page-content > .user .content .medialist .filters-wrap .filter-mobile-wrap .entry-filter input {
+  background: #534f54;
+  color: #ffffff;
+}
+.page-content > .user .content .medialist .filters-wrap .filter-mobile-wrap .entry-filter input::placeholder {
+  color: #ffffff;
+  opacity: 0.8;
+}
+.page-content > .user .content .medialist .filters-wrap .filter-mobile-wrap .entry-filter .el-input__prefix {
+  color: #ffffff;
+}
+.page-content > .user .content .medialist .filters-wrap .filters .filter-group .group-header {
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: "Monomaniac One", sans-serif;
+}
+.page-content > .user .content .medialist .filters-wrap .filters .filter-group .group-header > .action:hover {
+  color: #1ad9d9;
+}
+.page-content > .user .content .medialist .filters-wrap .filters .filter-group > span {
+  color: #ffffff;
+  padding: 5px;
+  background: transparent;
+  transition: background 150ms ease-in;
+}
+.page-content > .user .content .medialist .filters-wrap .filters .filter-group > span:not(.active):hover {
+  background: #534f54;
+  transition: background 150ms ease-out;
+}
+.page-content > .user .content .medialist .filters-wrap .filters .filter-group > span.active {
+  background: #1ad9d9;
+}
+.page-content > .user .content .medialist .filters-wrap .filters .filter-group > span .count {
+  padding-right: 5px;
+}
+.page-content > .user .content .medialist .filters-wrap .filters .filter-group .el-select .el-input input {
+  background: #534f54;
+  color: #ffffff;
+}
+.page-content > .user .content .medialist .filters-wrap .filters .filter-group .el-select .el-input input::placeholder {
+  color: #ffffff;
+  opacity: 0.8;
+}
+.page-content > .user .content .medialist .filters-wrap .filters .filter-group .el-slider .el-slider__runway {
+  background: #534f54;
+}
+.page-content > .user .content .medialist .filters-wrap .filters .filter-group .el-slider .el-slider__runway .el-slider__bar {
+  background: #1df1f1;
+}
+.page-content > .user .content .medialist .filters-wrap .filters .filter-group .el-slider .el-slider__runway .el-slider__button-wrapper .el-slider__button {
+  background-color: #534f54;
+  border-color: #1df1f1;
+}
+.page-content > .user .content .medialist .filters-wrap .filters .random-btn {
+  background: #534f54;
+  transition: background 150ms ease-in;
+}
+.page-content > .user .content .medialist .filters-wrap .filters .random-btn:hover {
+  background: #1ad9d9;
+  transition: background 150ms ease-out;
+}
 
 .el-dropdown-menu {
   background: #534f54 !important;
@@ -1178,6 +1247,20 @@ body {
 }
 .el-dropdown-menu .el-dropdown-menu__item .el-dropdown-menu__item--divided:before {
   background: #302d31 !important;
+}
+
+.el-select-dropdown {
+  background: #534f54 !important;
+  outline: 2px solid #221f23;
+}
+.el-select-dropdown .el-scrollbar .el-select-dropdown__wrap .el-scrollbar__view .el-select-dropdown__item {
+  color: #ffffff !important;
+}
+.el-select-dropdown .el-scrollbar .el-select-dropdown__wrap .el-scrollbar__view .el-select-dropdown__item:hover, .el-select-dropdown .el-scrollbar .el-select-dropdown__wrap .el-scrollbar__view .el-select-dropdown__item.hover {
+  background-color: #1ad9d9 !important;
+}
+.el-select-dropdown .popper__arrow {
+  display: none !important;
 }
 
 .el-dialog .el-dialog__body {
