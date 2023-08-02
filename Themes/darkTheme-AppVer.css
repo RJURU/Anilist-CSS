@@ -1502,6 +1502,66 @@ body {
 .page-content > .user .content .stats .stats-wrap .overview section .draggable .ps-container .line-chart-wrap .x-axis {
   background: #534f54;
 }
+.page-content > .user .content .stats .stats-wrap .overview .header .title {
+  color: #ffffff;
+  font-size: 3rem;
+  font-family: "Monomaniac One", sans-serif;
+  letter-spacing: 0.2rem;
+}
+.page-content > .user .content .stats .stats-wrap .overview .header .switches .switch {
+  height: auto;
+  background: #302d31;
+  border-radius: 4px;
+}
+.page-content > .user .content .stats .stats-wrap .overview .header .switches .switch .options .option {
+  padding: 10px;
+  background: transparent;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.page-content > .user .content .stats .stats-wrap .overview .header .switches .switch .options .option:not(.active):hover {
+  background: #534f54;
+}
+.page-content > .user .content .stats .stats-wrap .overview .header .switches .switch .options .option.active {
+  color: #ffffff;
+  background: #1ad9d9;
+}
+.page-content > .user .content .stats .stats-wrap .overview .stat-cards .stat-card {
+  background: #302d31;
+  color: #ffffff;
+}
+.page-content > .user .content .stats .stats-wrap .overview .stat-cards .stat-card .title {
+  color: #ffffff;
+}
+.page-content > .user .content .stats .stats-wrap .overview .stat-cards .stat-card .title a:hover {
+  color: #1df1f1;
+}
+.page-content > .user .content .stats .stats-wrap .overview .stat-cards .stat-card .count {
+  background: #1ad9d9;
+  border-radius: 4px;
+  color: #ffffff;
+}
+.page-content > .user .content .stats .stats-wrap .overview .stat-cards .stat-card .wrap .inner-wrap .details .detail .value {
+  text-align: center;
+}
+.page-content > .user .content .stats .stats-wrap .overview .stat-cards .stat-card .wrap .inner-wrap .details .detail .label {
+  text-align: center;
+  color: #ffffffaa;
+}
+.page-content > .user .content .stats .stats-wrap .overview .stat-cards .stat-card .wrap .inner-wrap .relations-wrap {
+  background: #534f54;
+}
+.page-content > .user .content .stats .stats-wrap .overview .stat-cards .stat-card .wrap .inner-wrap .relations-wrap .relations-inner-wrap .relations .relation-card {
+  border-radius: 4px;
+}
+.page-content > .user .content .stats .stats-wrap .overview .stat-cards .stat-card .wrap .inner-wrap .relations-wrap .button {
+  background: #221f23;
+  outline: 3px solid #ffffff;
+  color: #ffffff;
+}
+.page-content > .user .content .stats .stats-wrap .overview .increase-stats:hover {
+  color: #1df1f1;
+}
 
 .el-dropdown-menu {
   background: #534f54 !important;
