@@ -1362,6 +1362,146 @@ body {
 .page-content > .user .content .stats .filters .filter-wrap .hohStatsTrigger:hover {
   color: #1df1f1;
 }
+.page-content > .user .content .stats .stats-wrap .overview .highlights .highlight {
+  flex-direction: column;
+  border-left: 5px solid #302d31;
+  border-right: 5px solid #302d31;
+  border-radius: 4px;
+  background-color: #302d31;
+}
+.page-content > .user .content .stats .stats-wrap .overview .highlights .highlight .circle {
+  width: 100%;
+  background: #302d31;
+  border-radius: 0;
+}
+.page-content > .user .content .stats .stats-wrap .overview .highlights .highlight .circle > svg {
+  color: #ffffff;
+}
+.page-content > .user .content .stats .stats-wrap .overview .highlights .highlight .wrap {
+  padding-left: 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.page-content > .user .content .stats .stats-wrap .overview .highlights .highlight .wrap .value {
+  margin-bottom: 0px;
+  padding: 5px;
+  border-radius: 4px;
+  background: #534f54;
+  color: #1df1f1;
+  width: 90%;
+}
+.page-content > .user .content .stats .stats-wrap .overview .highlights .highlight .wrap .label {
+  color: #ffffff;
+  background: #302d31;
+  padding: 10px 5px;
+  width: 100%;
+  justify-content: center;
+}
+.page-content > .user .content .stats .stats-wrap .overview section .heading h3 {
+  color: #ffffff;
+  font-size: 3rem;
+  font-family: "Monomaniac One", sans-serif;
+  letter-spacing: 0.2rem;
+}
+.page-content > .user .content .stats .stats-wrap .overview section .heading .switch {
+  height: auto;
+  background: #302d31;
+  border-radius: 4px;
+}
+.page-content > .user .content .stats .stats-wrap .overview section .heading .switch .options .option {
+  padding: 10px;
+  background: transparent;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.page-content > .user .content .stats .stats-wrap .overview section .heading .switch .options .option:not(.active):hover {
+  background: #534f54;
+}
+.page-content > .user .content .stats .stats-wrap .overview section .heading .switch .options .option.active {
+  color: #ffffff;
+  background: #1ad9d9;
+}
+.page-content > .user .content .stats .stats-wrap .overview section .bar-chart-wrap {
+  background: #302d31;
+}
+.page-content > .user .content .stats .stats-wrap .overview section .bar-chart-wrap .bar-chart .bar-wrap .bar {
+  background: #1df1f1;
+}
+.page-content > .user .content .stats .stats-wrap .overview section .bar-chart-wrap .x-axis {
+  background: #534f54;
+}
+.page-content > .user .content .stats .stats-wrap .overview section.pie-charts .pie-chart {
+  background: #302d31;
+}
+.page-content > .user .content .stats .stats-wrap .overview section.pie-charts .pie-chart .title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: "Monomaniac One", sans-serif;
+  letter-spacing: 0.2rem;
+}
+.page-content > .user .content .stats .stats-wrap .overview section.pie-charts .pie-chart .wrap .pie-chart-wrap .pie-chart g path:nth-child(1) {
+  fill: #1ad9d9;
+}
+.page-content > .user .content .stats .stats-wrap .overview section.pie-charts .pie-chart .wrap .pie-chart-wrap .pie-chart g path:nth-child(2) {
+  fill: #17c1c1;
+}
+.page-content > .user .content .stats .stats-wrap .overview section.pie-charts .pie-chart .wrap .pie-chart-wrap .pie-chart g path:nth-child(3) {
+  fill: #14a9a9;
+}
+.page-content > .user .content .stats .stats-wrap .overview section.pie-charts .pie-chart .wrap .pie-chart-wrap .pie-chart g path:nth-child(4) {
+  fill: #119191;
+}
+.page-content > .user .content .stats .stats-wrap .overview section.pie-charts .pie-chart .wrap .pie-chart-wrap .pie-chart g path:nth-child(5) {
+  fill: #0f7979;
+}
+.page-content > .user .content .stats .stats-wrap .overview section.pie-charts .pie-chart .wrap .pie-chart-wrap .pie-chart g path:nth-child(6) {
+  fill: #0c6060;
+}
+.page-content > .user .content .stats .stats-wrap .overview section.pie-charts .pie-chart .wrap .pie-chart-wrap .pie-chart g path:nth-child(7) {
+  fill: #094848;
+}
+.page-content > .user .content .stats .stats-wrap .overview section.pie-charts .pie-chart .wrap .labels .label-wrap:nth-child(1) {
+  background: #1ad9d9 !important;
+}
+.page-content > .user .content .stats .stats-wrap .overview section.pie-charts .pie-chart .wrap .labels .label-wrap:nth-child(1) .percent {
+  background: #17c1c1;
+}
+.page-content > .user .content .stats .stats-wrap .overview section.pie-charts .pie-chart .wrap .labels .label-wrap:nth-child(2) {
+  background: #17c1c1 !important;
+}
+.page-content > .user .content .stats .stats-wrap .overview section.pie-charts .pie-chart .wrap .labels .label-wrap:nth-child(2) .percent {
+  background: #14a9a9;
+}
+.page-content > .user .content .stats .stats-wrap .overview section.pie-charts .pie-chart .wrap .labels .label-wrap:nth-child(3) {
+  background: #14a9a9 !important;
+}
+.page-content > .user .content .stats .stats-wrap .overview section.pie-charts .pie-chart .wrap .labels .label-wrap:nth-child(3) .percent {
+  background: #119191;
+}
+.page-content > .user .content .stats .stats-wrap .overview section .draggable .ps-container {
+  background: #302d31;
+}
+.page-content > .user .content .stats .stats-wrap .overview section .draggable .ps-container .line-chart-wrap {
+  background: #302d31;
+}
+.page-content > .user .content .stats .stats-wrap .overview section .draggable .ps-container .line-chart-wrap .line-chart .area {
+  fill: #1df1f1aa;
+}
+.page-content > .user .content .stats .stats-wrap .overview section .draggable .ps-container .line-chart-wrap .line-chart .line {
+  stroke: #1df1f1;
+}
+.page-content > .user .content .stats .stats-wrap .overview section .draggable .ps-container .line-chart-wrap .line-chart g .point {
+  fill: #1df1f1bb;
+}
+.page-content > .user .content .stats .stats-wrap .overview section .draggable .ps-container .line-chart-wrap .line-chart g .point-label {
+  fill: #ffffff;
+}
+.page-content > .user .content .stats .stats-wrap .overview section .draggable .ps-container .line-chart-wrap .x-axis {
+  background: #534f54;
+}
 
 .el-dropdown-menu {
   background: #534f54 !important;
@@ -1585,6 +1725,7 @@ body {
 .tooltip .title {
   color: #ffffff;
   background: #302d31;
+  border-radius: 4px 4px 0px 0px;
 }
 .tooltip .content {
   color: #ffffff;
