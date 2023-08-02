@@ -1334,6 +1334,34 @@ body {
 .page-content > .user .content .medialist.cards .lists .list-wrap .list-section .list-entries .entry-card:hover .title {
   background: linear-gradient(0deg, #0c6060cc 50%, transparent);
 }
+.page-content > .user .content .stats .filters .filter-wrap .filter-group .group-header {
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: "Monomaniac One", sans-serif;
+  letter-spacing: 0.2rem;
+}
+.page-content > .user .content .stats .filters .filter-wrap .filter-group .group-header > .action:hover {
+  color: #1ad9d9;
+}
+.page-content > .user .content .stats .filters .filter-wrap .filter-group > a {
+  color: #ffffff;
+  padding: 5px;
+  background: transparent;
+  transition: background 150ms ease-in;
+}
+.page-content > .user .content .stats .filters .filter-wrap .filter-group > a:not(.router-link-active):hover {
+  background: #534f54;
+  transition: background 150ms ease-out;
+}
+.page-content > .user .content .stats .filters .filter-wrap .filter-group > a.router-link-active {
+  background: #1ad9d9;
+}
+.page-content > .user .content .stats .filters .filter-wrap .hohStatsTrigger {
+  color: #ffffff;
+}
+.page-content > .user .content .stats .filters .filter-wrap .hohStatsTrigger:hover {
+  color: #1df1f1;
+}
 
 .el-dropdown-menu {
   background: #534f54 !important;
