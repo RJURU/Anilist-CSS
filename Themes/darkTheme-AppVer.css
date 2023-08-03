@@ -209,6 +209,9 @@ body {
   border-radius: 5px;
   overflow: hidden;
 }
+.page-content > .user .header-wrap .banner {
+  background-color: #302d31;
+}
 .page-content > .user .header-wrap .banner .container {
   display: flex;
   align-items: center;
@@ -1362,6 +1365,9 @@ body {
 .page-content > .user .content .stats .filters .filter-wrap .hohStatsTrigger:hover {
   color: #1df1f1;
 }
+.page-content > .user .content .stats .filters .filter-wrap .hohStatsTrigger.hohActive {
+  background: #1ad9d9;
+}
 .page-content > .user .content .stats .stats-wrap .overview .highlights .highlight {
   flex-direction: column;
   border-left: 5px solid #302d31;
@@ -1743,7 +1749,7 @@ body {
   background: #534f54cc;
 }
 .hohTable .row:hover a:hover {
-  color: #1df1f1;
+  color: #1df1f1 !important;
 }
 .hohTable .hohSecondaryRow {
   background: #534f54;
@@ -1756,6 +1762,10 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  color: #ffffff !important;
+}
+.hohTable .hohSecondaryRow > div:first-child .hohNameCel:hover {
+  color: #1df1f1 !important;
 }
 .hohTable .hohSecondaryRow > div:nth-child(3) {
   display: none;
