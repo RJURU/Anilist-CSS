@@ -1639,6 +1639,9 @@ body {
 .el-dialog .el-dialog__body .header .content .save-btn:hover {
   background: #1ad9d9;
 }
+.el-dialog .el-dialog__body .header::after {
+  background: #534f54aa;
+}
 .el-dialog .el-dialog__body .body {
   background: #302d31;
 }
@@ -1703,6 +1706,10 @@ body {
 }
 .el-dialog .el-dialog__body .body .checkbox-wrap .delete-btn:hover {
   background: #1ad9d9;
+}
+
+.list-editor-wrap .header:after {
+  background: initial;
 }
 
 .el-picker-panel {
