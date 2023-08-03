@@ -1708,6 +1708,65 @@ body {
   background: #1ad9d9;
 }
 
+.hohTable {
+  background: #302d31;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.hohTable .header {
+  background: #534f54 !important;
+  border-radius: 4px;
+}
+.hohTable .header > div {
+  padding: 5px;
+  text-align: center;
+}
+.hohTable .header > div:first-child {
+  text-align: left;
+}
+.hohTable .row {
+  border-radius: 4px;
+}
+.hohTable .row > div {
+  padding: 5px;
+  text-align: center;
+}
+.hohTable .row > div:first-child {
+  text-align: left;
+}
+.hohTable .row:nth-child(odd) {
+  background: #302d31;
+}
+.hohTable .row:hover {
+  background: #534f54cc;
+}
+.hohTable .row:hover a:hover {
+  color: #1df1f1;
+}
+.hohTable .hohSecondaryRow {
+  background: #534f54;
+  border-radius: 0;
+}
+.hohTable .hohSecondaryRow > div:first-child {
+  overflow: hidden;
+}
+.hohTable .hohSecondaryRow > div:first-child .hohNameCel {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.hohTable .hohSecondaryRow > div:nth-child(3) {
+  display: none;
+}
+.hohTable .hohSecondaryRow:nth-child(odd) {
+  background: #534f54;
+}
+.hohTable .hohSecondaryRow:hover {
+  background: #221f23;
+}
+
 .list-editor-wrap .header:after {
   background: initial;
 }
