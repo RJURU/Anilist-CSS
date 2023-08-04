@@ -892,6 +892,10 @@ body {
   background: #534f54;
   padding: 10px;
 }
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown .markdown-spoiler.spoiler-visible {
+  display: flex;
+  flex-direction: column;
+}
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-feed .activity-entry .reply-wrap .activity-replies .reply .reply-markdown .markdown blockquote {
   background: #534f54;
   border-left: 7px solid #ffffff;
@@ -1019,6 +1023,11 @@ body {
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-message .wrap .text .activity-markdown .markdown .markdown-spoiler > span {
   background: #534f54;
   padding: 10px;
+}
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-text .wrap .text .activity-markdown .markdown .markdown-spoiler.spoiler-visible,
+.page-content > .user .content .overview .section .activity-feed-wrap .activity-message .wrap .text .activity-markdown .markdown .markdown-spoiler.spoiler-visible {
+  display: flex;
+  flex-direction: column;
 }
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-text .wrap .text .activity-markdown .markdown blockquote,
 .page-content > .user .content .overview .section .activity-feed-wrap .activity-message .wrap .text .activity-markdown .markdown blockquote {
@@ -1636,21 +1645,27 @@ body {
 }
 .page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .header {
   padding: 0px 0px 10px 0px;
+  align-items: center;
+  margin-bottom: 0px;
 }
-.page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .header .avatar {
-  outline: 3px solid transparent;
-  border-radius: 50%;
-  transition: color 200ms ease-out;
-}
-.page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .header .name {
+.page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .header .user {
   color: #ffffff;
   font-size: 2rem;
   transition: color 200ms ease-out;
   font-family: "Monomaniac One", sans-serif;
 }
+.page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .header .user .avatar {
+  outline: 3px solid transparent;
+  border-radius: 50%;
+  transition: color 200ms ease-out;
+}
 .page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .header .donator-badge {
   background: #1ad9d9;
   color: #ffffff;
+}
+.page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .header .time {
+  color: #ffffff;
+  padding-top: 5px;
 }
 .page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .markdown {
   margin-top: 0px;
@@ -1682,6 +1697,10 @@ body {
 .page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .markdown .markdown-spoiler > span {
   background: #534f54;
   padding: 10px;
+}
+.page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .markdown .markdown-spoiler.spoiler-visible {
+  display: flex;
+  flex-direction: column;
 }
 .page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .markdown blockquote {
   background: #534f54;
@@ -1727,13 +1746,13 @@ body {
   -webkit-border-radius: 16px;
   opacity: 0;
 }
-.page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow:hover .comment .header .avatar {
-  outline: 3px solid #1df1f1;
-  transition: outline 200ms ease-in;
-}
-.page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow:hover .comment .header .name {
+.page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow:hover .comment .header .user {
   color: #1df1f1;
   transition: color 200ms ease-in;
+}
+.page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow:hover .comment .header .user .avatar {
+  outline: 3px solid #1df1f1;
+  transition: outline 200ms ease-in;
 }
 .page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow:hover .comment .markdown:before, .page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow:hover .comment .markdown::after {
   content: "";
