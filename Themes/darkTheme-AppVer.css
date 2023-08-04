@@ -1641,7 +1641,6 @@ body {
 }
 .page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment {
   background: #302d31;
-  padding-bottom: 40px;
 }
 .page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .header {
   padding: 0px 0px 10px 0px;
@@ -1666,6 +1665,63 @@ body {
 .page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .header .time {
   color: #ffffff;
   padding-top: 5px;
+}
+.page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .header .actions {
+  height: 30px;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .header .actions > a {
+  opacity: 1;
+}
+.page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .header .actions > a:hover {
+  color: #1df1f1;
+}
+.page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .header .actions .like-wrap {
+  display: grid;
+}
+.page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .header .actions .like-wrap .users {
+  display: none !important;
+}
+.page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .header .actions .like-wrap .button {
+  background: #534f54;
+  height: 26px;
+  width: 26px;
+  border-radius: 4px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  position: relative;
+}
+.page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .header .actions .like-wrap .button .count {
+  display: none;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translate(-50%);
+  background: #534f54;
+  padding: 5px;
+  border-radius: 4px;
+  color: #1df1f1;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0px;
+}
+.page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .header .actions .like-wrap .button > svg {
+  transform: scale(1.5);
+  color: #ffffff;
+  stroke: #ffffff;
+  width: 26px;
+  margin-left: 0px;
+}
+.page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .header .actions .like-wrap .button:hover > svg, .page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .header .actions .like-wrap .button.liked > svg {
+  color: #1df1f1;
+  stroke: #1df1f1;
+}
+.page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .header .actions .like-wrap .button:hover .count {
+  display: block;
 }
 .page-content > .user .content .user-social .user-comments .wrap .comment-wrap .grow .comment .markdown {
   margin-top: 0px;
