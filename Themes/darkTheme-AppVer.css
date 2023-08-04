@@ -1602,12 +1602,12 @@ body {
 .page-content > .user .content .user-social .filters .theme-switch > span.active {
   color: #1df1f1;
 }
-.page-content > .user .content .user-social .user-follow .wrap .follow-card {
+.page-content > .user .content .user-social .follow-card {
   background-color: #302d31;
   border-radius: 4px;
   outline: 3px solid transparent;
 }
-.page-content > .user .content .user-social .user-follow .wrap .follow-card:hover {
+.page-content > .user .content .user-social .follow-card:hover {
   outline: 3px solid #1df1f1;
 }
 .page-content > .user .content .user-social.listView .user-follow .wrap .follow-card {
