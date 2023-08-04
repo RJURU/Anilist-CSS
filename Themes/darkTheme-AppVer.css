@@ -1568,6 +1568,59 @@ body {
 .page-content > .user .content .stats .stats-wrap .overview .increase-stats:hover {
   color: #1df1f1;
 }
+.page-content > .user .content .user-social .filters .filter-group .group-header {
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: "Monomaniac One", sans-serif;
+  letter-spacing: 0.2rem;
+}
+.page-content > .user .content .user-social .filters .filter-group > span {
+  color: #ffffff;
+  padding: 5px;
+  background: transparent;
+  transition: background 150ms ease-in;
+}
+.page-content > .user .content .user-social .filters .filter-group > span .hohCount {
+  color: #ffffff;
+}
+.page-content > .user .content .user-social .filters .filter-group > span:not(.active):hover {
+  background: #534f54;
+  transition: background 150ms ease-out;
+}
+.page-content > .user .content .user-social .filters .filter-group > span.active {
+  background: #1ad9d9;
+}
+.page-content > .user .content .user-social .filters .theme-switch {
+  background: #302d31;
+}
+.page-content > .user .content .user-social .filters .theme-switch > span {
+  color: #ffffff;
+}
+.page-content > .user .content .user-social .filters .theme-switch > span:not(.active):hover {
+  color: #14a9a9;
+}
+.page-content > .user .content .user-social .filters .theme-switch > span.active {
+  color: #1df1f1;
+}
+.page-content > .user .content .user-social .user-follow .wrap .follow-card {
+  background-color: #302d31;
+  border-radius: 4px;
+  outline: 3px solid transparent;
+}
+.page-content > .user .content .user-social .user-follow .wrap .follow-card:hover {
+  outline: 3px solid #1df1f1;
+}
+.page-content > .user .content .user-social.listView .user-follow .wrap .follow-card {
+  border-radius: 4px 0px 0px 4px;
+  margin: 4px;
+}
+.page-content > .user .content .user-social.listView .user-follow .wrap .follow-card .name {
+  border-radius: 0px 4px 4px 0px;
+  background: #302d31;
+}
+.page-content > .user .content .user-social.listView .user-follow .wrap .follow-card:hover {
+  outline: 3px solid transparent;
+}
 
 .el-dropdown-menu {
   background: #534f54 !important;
